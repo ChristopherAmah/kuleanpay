@@ -52,7 +52,7 @@ const HeroSection = () => {
       </div>
 
       {/* Optional Banner Below */}
-      <img src={banner} alt="banner" className="w-full mt-auto" />
+      {/* <img src={banner} alt="banner" className="w-full mt-auto" /> */}
     </section>
   );
 };

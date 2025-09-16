@@ -1,7 +1,7 @@
 import React from "react";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
-import hero from "../assets/herobg.png"; // Ensure this path is correct
-import bg from "../assets/bg.png"; // Ensure this path is correct
+import phoneandlaptop from "../assets/phoneandlaptop.png";
+import bg from "../assets/bg.png";
 
 const Hero = () => {
   return (
@@ -45,13 +45,13 @@ const Hero = () => {
         </a>
       </div>
 
-      {/* Mockup Preview */}
-      <div className="flex justify-center items-center">
-        <div className="w-max-w-7xl h-100  overflow-hidden">
+      {/* Mockup Preview - Top Half Only (Responsive) */}
+      <div className="flex justify-center items-center mt-10">
+        <div className="w-full max-w-5xl h-[200px] sm:h-[300px] md:h-[400px] overflow-hidden">
           <img
-            src={hero}
-            alt="Phone Mockup"
-            className="h-[180%] object-cover object-center"
+            src={phoneandlaptop}
+            alt="Phone and Laptop Mockup"
+            className="w-full object-cover object-top"
           />
         </div>
       </div>

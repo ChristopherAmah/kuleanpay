@@ -86,7 +86,7 @@ const HeroSection = () => {
       </div>
 
       {/* Optional Banner Below */}
-      <img src={banner} alt="banner" className="w-full"/>
+      {/* <img src={banner} alt="banner" className="w-full"/> */}
     </section>
   );
 };
