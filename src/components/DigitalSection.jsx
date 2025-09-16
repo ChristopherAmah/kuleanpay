@@ -21,6 +21,11 @@ const TwoCardsSection = () => {
   return (
     <section className="bg-white font-sans py-20 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto max-w-7xl">
+        {/* Section Heading */}
+        <h2 className="text-4xl md:text-5xl font-semibold lg:font-medium text-center text-[#000000] mb-16">
+          How It Works
+        </h2>
+        
         {cards.map((card, index) => (
           <div
             key={index}
@@ -37,7 +42,7 @@ const TwoCardsSection = () => {
               <h3 className="text-2xl md:text-3xl font-semibold text-[#192031] mb-4">
                 {card.title}
               </h3>
-              <p className="text-[#19203199] leading-relaxed text-lg">
+              <p className="text-[#19203199] leading-relaxed text-left md:text-lg">
                 {card.description}
               </p>
             </div>

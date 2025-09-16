@@ -32,7 +32,7 @@ const App = () => {
     <div className="bg-white font-sans text-[#192031] min-h-screen p-8 md:p-16 lg:p-20">
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
-        <h2 className="text-4xl md:text-5xl text-[#000000] font-medium font-satoshi text-center mb-16">
+        <h2 className="text-4xl md:text-5xl text-[#000000] font-semibold font-satoshi text-center mb-16">
           How It Works
         </h2>
 
@@ -50,10 +50,10 @@ const App = () => {
                 step.reverse ? "lg:pr-16" : "lg:pl-16"
               } text-center lg:text-left`}
             >
-              <h3 className="text-2xl md:text-3xl font-medium font-satoshi mb-4">
+              <h3 className="text-2xl md:text-3xl font-semibold font-satoshi mb-4">
                 {step.title}
               </h3>
-              <p className="text-[20px] leading-relaxed text-[#192031CC]">
+              <p className="md:text-[20px] leading-relaxed text-[#192031CC]">
                 {step.description}
               </p>
             </div>

@@ -73,7 +73,7 @@ const Footer = () => {
               <a
                 key={index}
                 href={link.href}
-                className="text-white border-[0.91px] gap-[21px] mt-[80px] border-gray-100 p-[10.97px] rounded-full hover:text-white transition-colors duration-300"
+                className="text-white border-[0.91px] gap-[21px] md:mt-[80px] border-gray-100 p-[10.97px] rounded-full hover:text-white transition-colors duration-300"
               >
                 {link.icon}
               </a>

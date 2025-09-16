@@ -36,7 +36,7 @@ const App = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           What do you stand to gain
         </h2>
-        <p className="text-center text-lg text-[#19203199] max-w-2xl mx-auto mb-16">
+        <p className="text-center md:text-lg text-[#19203199] max-w-2xl mx-auto mb-16">
           We offer you a seamless integration into your platform to enable you make secure transactions through Kuleanpay. We also provide you with different integration options based on your preferences
         </p>
 

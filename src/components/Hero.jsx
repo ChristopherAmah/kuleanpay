@@ -43,7 +43,7 @@ const HeroSection = () => {
             </p>
             
             {/* Store Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row items-center lg:items-start gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row  lg:items-start gap-4">
               <a href="#" className="flex items-center gap-3 bg-[#01011C] shadow-lg border border-[#A6A6A6] text-white rounded-lg px-5 py-3 w-48 transition-transform duration-300 hover:scale-105">
                 <FaApple className="w-7 h-7"/>
                 <div>
