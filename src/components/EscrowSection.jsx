@@ -39,9 +39,9 @@ const steps = [
     reverse: true,
   },
   {
-    title: "Confirm Delivery",
+    title: "Release Funds",
     description:
-      "After confirming delivery, the payment will be released to the seller, completing the transaction securely.",
+      "Once you confirm delivery of the product or service, the funds would be released into the other party's wallet and transaction is completed.",
     image: escrowe,
     circleColor: "bg-[#EBEBF6]",
     reverse: false,

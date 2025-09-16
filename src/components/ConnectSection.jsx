@@ -14,7 +14,7 @@ const Hero = () => {
       }}
     >
       {/* Heading */}
-      <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
+      <h1 className="text-3xl md:text-4xl px-2 font-semibold text-gray-900 leading-snug">
         Let’s connect and manage your{" "}
         <br className="hidden md:block" /> finances with{" "}
         <span className="text-indigo-500 font-bold">Kuleanpay</span>

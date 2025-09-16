@@ -33,11 +33,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-[4fr_5fr] items-center min-h-[600px]">
           
           {/* Left Column: Text */}
-          <div className="pl-10 pt-20">
+          <div className="lg:pl-10 lg:pt-16 px-6 lg:px-0">
             <h1 className="text-4xl lg:text-7xl mt-[70px] font-bold font-satoshi text-[#1B2632]">
               Unlock Better Finances with Kuleanpay!
             </h1>
-            <p className="mt-[16px] font-satoshi text-[18px] text-[#19203199] max-w-xl">
+            <p className="mt-[16px] px-2 font-satoshi md:text-[18px] text-[#19203199] md:max-w-xl">
               Download our app for seamless daily transactions and effortless finance management. 
               Stay on top of your spending and make buying and selling a breeze!
             </p>
@@ -48,20 +48,20 @@ const HeroSection = () => {
                 <FaApple className="w-7 h-7"/>
                 <div>
                   <p className="text-xs font-medium">Download on the</p>
-                  <p className="text-xl font-semibold">App Store</p>
+                  <p className="md:text-xl font-semibold">App Store</p>
                 </div>
               </a>
               <a href="#" className="flex items-center gap-3 bg-[#01011C] shadow-lg border border-[#A6A6A6] text-white rounded-lg px-5 py-3 w-48 transition-transform duration-300 hover:scale-105">
                 <img src={playstore} alt="Playstore" className="w-6 h-6"/>
                 <div>
                   <p className="text-xs font-medium">GET IT ON</p>
-                  <p className="text-lg font-semibold">Google Play</p>
+                  <p className="md:text-lg font-semibold">Google Play</p>
                 </div>
               </a>
             </div>
 
             {/* Ratings */}
-            <div className="mt-10 flex items-center gap-2">
+            <div className="mt-10 flex items-center gap-2 mb-10">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
               </div>

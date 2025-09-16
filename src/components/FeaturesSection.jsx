@@ -9,7 +9,7 @@ const FeaturesSection = () => {
         {/* Left side: Phone Mockup */}
         <div className="relative flex justify-center">
           {/* Phone Container */}
-          <div className="relative rounded-3xl p-8 shadow-lg">
+          <div className="relative rounded-3xl p-2">
             <img src={featurecard} alt="" />
           </div>
         </div>
@@ -24,14 +24,14 @@ const FeaturesSection = () => {
           {/* Feature Item */}
           <div className="bg-[#111827] rounded-xl p-5 mb-4 shadow-md">
             <div className="flex items-start gap-3">
-              <div className="w-7 h-7 flex items-center justify-center p-5 rounded-full border border-gray-500 text-sm font-semibold">
+              <div className="w-7 h-7 flex items-center justify-center md:p-5 p-3 rounded-full border border-gray-500 text-sm font-semibold">
                 1
               </div>
               <div>
                 <h3 className="font-semibold">Buy & sell with Kuleanpay Escrow</h3>
                 <p className="text-gray-400 text-sm mt-1">
                   Kuleanpay is adaptable to meet the financial processing
-                  requirements of global companies and support with multiple
+                  requirements of global companies and support with multiple.
                 </p>
               </div>
             </div>
@@ -39,7 +39,7 @@ const FeaturesSection = () => {
 
           <div className="bg-[#111827] rounded-xl p-5 mb-4 shadow-md">
             <div className="flex items-start gap-3">
-              <div className="w-7 h-7 flex items-center justify-center p-5 rounded-full border border-gray-500 text-sm font-semibold">
+              <div className="w-7 h-7 flex items-center justify-center md:p-5 p-3 rounded-full border border-gray-500 text-sm font-semibold">
                 2
               </div>
               <div>
@@ -55,14 +55,14 @@ const FeaturesSection = () => {
 
           <div className="bg-[#111827] rounded-xl p-5 mb-4 shadow-md">
             <div className="flex items-start gap-3">
-              <div className="w-7 h-7 flex items-center justify-center p-5 rounded-full border border-gray-500 text-sm font-semibold">
+              <div className="w-7 h-7 flex items-center justify-center md:p-5 p-3 rounded-full border border-gray-500 text-sm font-semibold">
                 3
               </div>
               <div>
                 <h3 className="font-semibold">Bank With Kuleanpay</h3>
                 <p className="text-gray-400 text-sm mt-1">
                   We ensure that the app is used safely and correctly, and that
-                  you can manage your own wallet in one place
+                  you can manage your own wallet in one place.
                 </p>
               </div>
             </div>

@@ -13,7 +13,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="px-20">
+    <section className="md:px-20">
         <div className="w-full py-8 lg:py-8">
       <div className="container mx-auto px-4">
         {/* Header */}

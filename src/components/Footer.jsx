@@ -52,11 +52,11 @@ const Footer = () => {
   };
 
   return (
-  <footer className="relative bg-[#1B2333] px-[100px] text-white overflow-hidden">
+  <footer className="relative bg-[#1B2333] px-6 md:px-[100px] text-white overflow-hidden">
     {/* Decorative Blur Shape */}
     <div className="absolute -top-80 left-1/2 transform -translate-x-1/8 w-[400px] h-[400px] bg-[#6E83D1]/50 blur-3xl rounded-full pointer-events-none"></div>
 
-    <div className="relative mx-auto py-[58.8px]">
+    <div className="relative mx-auto md:py-[58.8px] py-6">
       {/* Top section */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[8fr_3fr_3fr_3fr] gap-13">
         {/* Column 1: Logo + Social */}

@@ -46,7 +46,7 @@ const App = () => {
           >
             {/* Text Content */}
             <div
-              className={`w-full lg:w-1/2 ${
+              className={`w-full lg:w-3/4 ${
                 step.reverse ? "lg:pr-16" : "lg:pl-16"
               } text-center lg:text-left`}
             >
