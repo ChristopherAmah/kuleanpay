@@ -33,8 +33,8 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-[4fr_5fr] items-center min-h-[600px]">
           
           {/* Left Column: Text */}
-          <div className="lg:pl-10 lg:pt-16 px-6 lg:px-0">
-            <h1 className="text-4xl lg:text-7xl mt-[70px] font-bold font-satoshi text-[#1B2632]">
+          <div className="lg:pl-10 px-6 lg:px-0">
+            <h1 className="text-4xl lg:text-7xl font-bold font-satoshi text-[#1B2632]">
               Unlock Better Finances with Kuleanpay!
             </h1>
             <p className="mt-[16px] px-2 font-satoshi md:text-[18px] text-[#19203199] md:max-w-xl">
