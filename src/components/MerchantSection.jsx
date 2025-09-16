@@ -32,7 +32,7 @@ const App = () => {
     <div className="bg-white font-sans text-[#192031] min-h-screen p-8 md:p-16 lg:p-20">
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
-        <h2 className="text-4xl md:text-5xl text-[#000000] font-semibold font-satoshi text-center mb-16">
+        <h2 className="text-4xl md:text-5xl text-[#000000] font-semibold font-satoshi text-center mb-8 lg:mb-16">
           How It Works
         </h2>
 
