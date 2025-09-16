@@ -63,7 +63,7 @@ const HeroSection = () => {
             {/* Mobile & Tablet (smaller screens) */}
             <div className="block lg:hidden w-full overflow-hidden">
               <div className="flex justify-center items-center">
-                <div className="w-full h-[300px] overflow-hidden">
+                <div className="w-full h-[250px] overflow-hidden">
                   <img
                     src={hero}
                     alt="Phone Mockup"
