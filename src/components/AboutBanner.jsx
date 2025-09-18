@@ -1,6 +1,6 @@
 import React from 'react';
 import herobg from '../assets/hero.jpg'; // The main background image
-import merchant from '../assets/merchant.png'; // This image will be used for the right-side gradient and mockups
+import about from '../assets/about.jpg'; // This image will be used for the right-side gradient and mockups
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
@@ -29,13 +29,7 @@ const HeroSection = () => {
                 to="/signup"
                 className="px-4 lg:px-5 py-2 rounded-[10px] bg-[#03045E] border text-white md:text-[17px] transition"
               >
-                Sign up
-              </Link>
-              <Link
-                to="/signup"
-                className="px-4 lg:px-5 py-2 rounded-[10px] border border-[#03045E] bg-white md:text-[17px] text-[#03045E] transition"
-              >
-                Sign up
+                Get Started
               </Link>
             </div>
           </div> {/* ✅ closed left column properly */}
@@ -43,7 +37,7 @@ const HeroSection = () => {
           {/* Right Column: Gradient Overlay */}
           <div className="hidden lg:block w-full h-full relative">
             <div className="absolute inset-0 bg-[#D4D5FF] z-10">
-                <img src={merchant} alt="" className='bg-cover mx-auto justify-center'/>
+                <img src={about} alt="" className='bg-cover mx-auto justify-center'/>
             </div>
           </div>
           

@@ -1,8 +1,6 @@
 import React from 'react';
 import herobg from '../assets/hero.jpg'; // The main background image
-import hero from '../assets/herobg.png'; // This image will be used for the right-side gradient and mockups
-import playstore from '../assets/playstore.png';
-import { FaApple } from "react-icons/fa";
+import dbanking from '../assets/dbanking.png'; // This image will be used for the right-side gradient and mockups
 import banner from '../assets/banner.jpg'; // The banner at the bottom
 import { Link } from 'react-router-dom';
 
@@ -45,7 +43,9 @@ const HeroSection = () => {
 
           {/* Right Column: Gradient Overlay */}
           <div className="hidden lg:block w-full h-full relative">
-            <div className="absolute inset-0 bg-[#D4D5FF] z-10"></div>
+            <div className="absolute inset-0 bg-[#D4D5FF] z-10">
+                <img src={dbanking} alt="" className='bg-cover mx-auto justify-center'/>
+            </div>
           </div>
           
         </div>

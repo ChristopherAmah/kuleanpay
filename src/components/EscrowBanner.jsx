@@ -1,6 +1,6 @@
 import React from 'react';
 import herobg from '../assets/hero.jpg'; // The main background image
-import banner from '../assets/banner.jpg'; // The banner at the bottom
+import escrowbanner from '../assets/escrowbanner.png'; // The banner at the bottom
 
 
 const HeroSection = () => {
@@ -18,7 +18,7 @@ const HeroSection = () => {
           
           {/* Left Column: Text */}
           <div className="flex flex-col text-left lg:items-start lg:text-left px-6 sm:px-6 lg:px-16">
-            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] leading-tight">
+            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] leading-tight" style={{fontStyle: "satoshi"}}>
               Go Escrow<br />with <br />Kuleanpay
             </h1>
             <p className="mt-4 font-satoshi md:max-w-xl lg:max-w-lg text-base lg:text-[18px] md:font-medium text-[#19203199]">
@@ -28,14 +28,13 @@ const HeroSection = () => {
 
           {/* Right Column: Gradient Overlay */}
           <div className="hidden lg:block w-full h-full relative">
-            <div className="absolute inset-0 bg-[#D4D5FF] z-10"></div>
+            <div className="absolute inset-0 bg-[#D4D5FF] z-10">
+                <img src={escrowbanner} alt="" className='bg-cover mx-auto justify-center'/>
+            </div>
           </div>
           
         </div>
       </div>
-
-      {/* Optional Banner Below */}
-      {/* <img src={banner} alt="banner" className="w-full mt-auto" /> */}
     </section>
   );
 };

@@ -47,7 +47,7 @@ const Hero = () => {
 
       {/* Mockup Preview - Top Half Only (Responsive) */}
       <div className="flex justify-center items-center mt-10">
-        <div className="w-full max-w-5xl h-[200px] sm:h-[300px] md:h-[400px] overflow-hidden">
+        <div className="w-full max-w-5xl h-[200px] md:ml-20 sm:h-[300px] md:h-[320px] overflow-hidden">
           <img
             src={phoneandlaptop}
             alt="Phone and Laptop Mockup"
