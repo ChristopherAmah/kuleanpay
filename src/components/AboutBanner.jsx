@@ -1,6 +1,6 @@
 import React from 'react';
 import herobg from '../assets/hero.jpg'; // The main background image
-import about from '../assets/about.jpg'; // This image will be used for the right-side gradient and mockups
+import about from '../assets/about.png'; // This image will be used for the right-side gradient and mockups
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
@@ -19,11 +19,10 @@ const HeroSection = () => {
           {/* Left Column: Text */}
           <div className="flex flex-col lg:items-start text-left lg:text-left px-6 sm:px-6 lg:px-16">
             <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] leading-tight">
-              Merchants <br />payments <br />collection
+              About <br />Kuleanpay
             </h1>
             <p className="mt-4 font-satoshi lg:max-w-lg text-base lg:text-[18px] md:font-medium text-[#19203199]">
-              Partner with Kuleanpay to grow your business and accept secure payments. Our world-class API lets you integrate safe, fast services in just a few lines of code 
-            </p>
+                We are in the business of providing individuals and corporate bodies a secure online payment platform to reduce the growing rate of fraudulent transactions online.            </p>
             <div className="flex items-center gap-x-[14px] font-jakarta mt-3">
               <Link
                 to="/signup"
