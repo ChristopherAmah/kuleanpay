@@ -23,7 +23,7 @@ const HeroSection = () => {
             <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] leading-tight">
               Become a<br />partner with <br />Kuleanpay
             </h1>
-            <p className="mt-4 font-satoshi lg:max-w-lg text-base lg:text-[18px] md:font-medium text-[#19203199]">
+            <p className="mt-4 font-satoshi lg:max-w-lg  lg:text-[18px] md:font-medium text-[#19203199]">
               Say no to transaction delays and fraudulent transactions as you send and receive money instantly within any bank in Nigeria with Kuleanpay. 
             </p>
             <div className="flex items-center gap-x-[14px] font-jakarta mt-3">

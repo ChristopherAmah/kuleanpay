@@ -1,0 +1,14 @@
+@keyframes dropdownSlideIn {
+  0% {
+    transform: translate(-30%, 30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.dropdown-animate {
+  animation: dropdownSlideIn 0.4s ease-out forwards;
+}

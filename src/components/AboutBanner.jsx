@@ -21,7 +21,7 @@ const HeroSection = () => {
             <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] leading-tight">
               About <br />Kuleanpay
             </h1>
-            <p className="mt-4 font-satoshi lg:max-w-lg text-base lg:text-[18px] md:font-medium text-[#19203199]">
+            <p className="mt-4 font-satoshi lg:max-w-lg  lg:text-[18px] md:font-medium text-[#19203199]">
                 We are in the business of providing individuals and corporate bodies a secure online payment platform to reduce the growing rate of fraudulent transactions online.            </p>
             <div className="flex items-center gap-x-[14px] font-jakarta mt-3">
               <Link

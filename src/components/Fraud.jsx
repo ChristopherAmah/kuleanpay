@@ -37,7 +37,7 @@ const FraudProtectionSection = () => {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#000000] leading-tight">
               Taking away the risks of fraudulent transactions
             </h2>
-            <p className="mt-4 sm:mt-6 text-base sm:text-[16px] font-medium text-[#19203199]">
+            <p className="mt-4 sm:mt-6  sm:text-[16px] font-medium text-[#19203199]">
               Kuleanpay provides simple and transparent payment solutions to the legal and professional services industries and to marketplaces and e-commerce platforms.
             </p>
           </div>

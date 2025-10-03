@@ -10,13 +10,13 @@ const FaqItem = ({ question, answer, isOpen, onToggle }) => {
         onClick={onToggle}
         className="w-full flex justify-between items-center text-left focus:outline-none"
       >
-        <h3 className="text-base sm:text-lg font-medium text-[#1B2632]">{question}</h3>
+        <h3 className=" sm:text-lg font-medium text-[#1B2632]">{question}</h3>
         <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-gray-300 flex items-center justify-center flex-shrink-0">
           {isOpen ? <Minus size={16} className="text-gray-600" /> : <Plus size={16} className="text-gray-600" />}
         </div>
       </button>
       {isOpen && (
-        <div className="mt-2 sm:mt-4 text-gray-500 text-sm sm:text-base">
+        <div className="mt-2 sm:mt-4 text-gray-500 text-sm sm:">
           <p>{answer}</p>
         </div>
       )}

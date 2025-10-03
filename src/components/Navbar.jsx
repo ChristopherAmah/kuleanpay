@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
-import { FaTimes } from "react-icons/fa"; // Keep FaTimes for the mobile menu close button
+import playstore from "../assets/playstore.png";
+import { FaApple, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,55 +19,25 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    setIsSolutionsOpen(false);
-  };
-
-  const closeMenus = () => {
-    setIsMenuOpen(false);
-    setIsSolutionsOpen(false);
-  };
-
   return (
-    <nav className="w-full bg-[#00000005] px-5 lg:px-16 py-2 flex items-center justify-between relative z-50">
-      {/* Left: Logo */}
-      <Link to="/" onClick={closeMenus}>
-        <div className="flex items-center gap-x-2 lg:mr-[-200px]">
-          <img src={logo} alt="KuleanPay logo" className="w-[40px]" />
-          <span className="font-jakarta text-[25.96px] font-semibold text-[#242424]">
-            KuleanPay
-          </span>
-        </div>
+    <nav className="w-full bg-[#F8F8F9] px-6 lg:px-16 py-3 flex items-center justify-between relative z-50">
+      {/* Logo */}
+      <Link to="/" className="flex items-center gap-2">
+        <img src={logo} alt="KuleanPay logo" className="w-[32px] h-[32px] rounded-full" />
+        <span className="font-medium text-[20px] text-[#242424]">KuleanPay</span>
       </Link>
 
-      {/* Mobile Menu Button (SVG Icon) */}
-      <div className="md:hidden flex items-center gap-x-[14px]">
-        <button onClick={toggleMenu} className="text-[#03045E]">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-            ></path>
-          </svg>
-        </button>
-      </div>
+      {/* Desktop Nav */}
+      <div className="hidden md:flex items-center gap-x-8 text-[#666] font-medium">
+        <Link to="/why-kuleanpay" className="hover:text-black transition">
+          Why Kuleanpay?
+        </Link>
 
-      {/* Desktop Navigation Links */}
-      <div className="hidden md:flex items-center gap-x-[52px] text-[#878C91] font-dm">
-        {/* Solutions Dropdown for Desktop */}
+        {/* Solutions Dropdown */}
         <div ref={solutionsRef} className="relative">
           <button
             onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-            className="flex items-center gap-1 hover:text-gray-900 transition"
+            className="flex items-center gap-1 hover:text-black transition"
           >
             Solutions
             <svg
@@ -81,160 +52,136 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
+
           {isSolutionsOpen && (
-            <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-white shadow-2xl rounded-2xl p-6 w-[340px] z-50 animate-slideUp">
-              <SolutionsDropdownMenu closeMenus={closeMenus} />
+            <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg w-48 p-3 z-50">
+              <Link to="/escrow" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded">
+                Escrow
+              </Link>
+              <Link to="/digital-banking" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded">
+                Digital Banking
+              </Link>
+              <Link to="/merchant-payments" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded">
+                Merchant Payments
+              </Link>
             </div>
           )}
         </div>
-        <Link to="/company" onClick={closeMenus} className="hover:text-gray-900 transition">
-          Company
+
+        <Link to="/partners" className="hover:text-black transition">
+          Partners
         </Link>
-        <Link to="/blog" onClick={closeMenus} className="hover:text-gray-900 transition">
-          Blog
+        <Link to="/company" className="hover:text-black transition">
+          Company
         </Link>
       </div>
 
-      {/* Desktop Buttons */}
-      <div className="hidden md:flex items-center gap-x-[14px] font-jakarta">
-        <Link
-          to="/login"
-          onClick={closeMenus}
-          className="px-4 lg:px-5 py-2 rounded-[10px] border border-[#00000033] text-[#03045E] hover:bg-gray-100 transition"
+      {/* Store Buttons (Desktop only) */}
+      <div className="hidden md:flex items-center gap-3">
+        <a
+          href="#"
+          className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
         >
-          Login
-        </Link>
-        <Link
-          to="/signup"
-          onClick={closeMenus}
-          className="px-4 lg:px-5 py-2 rounded-[10px] bg-[#03045E] text-[17px] text-white hover:bg-[#03045E] transition"
+          <FaApple className="w-5 h-5" />
+          <div className="leading-tight">
+            <p className="text-[10px]">Download on the</p>
+            <p className="text-sm font-semibold">App Store</p>
+          </div>
+        </a>
+        <a
+          href="#"
+          className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
         >
-          Sign up
-        </Link>
+          <img src={playstore} alt="Playstore" className="w-5 h-5" />
+          <div className="leading-tight">
+            <p className="text-[10px]">GET IT ON</p>
+            <p className="text-sm font-semibold">Google Play</p>
+          </div>
+        </a>
+      </div>
+
+      {/* Hamburger Icon (Mobile only) */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setIsMenuOpen(true)}
+          className="text-[#242424] focus:outline-none"
+        >
+          <svg
+            className="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-white md:hidden z-40 p-5 pt-20 flex flex-col items-center space-y-8 animate-slideIn">
-          {/* Menu Header with Close Button */}
-          <div className="absolute top-4 right-4">
-            <button onClick={closeMenus} className="text-[#03045E] text-3xl">
+        <div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col p-6">
+          {/* Close Button */}
+          <div className="flex justify-end">
+            <button onClick={() => setIsMenuOpen(false)} className="text-2xl">
               <FaTimes />
             </button>
           </div>
-          
-          <div className="w-full text-center space-y-6">
-            {/* Solutions Links for Mobile */}
-            <h3 className="text-lg font-semibold text-[#878C91]">Solutions</h3>
-            <div className="flex flex-col items-center space-y-3">
-              <Link
-                to="/escrow"
-                onClick={closeMenus}
-                className="block text-base text-gray-700 hover:text-gray-900 transition"
-              >
-                Escrow
-              </Link>
-              <Link
-                to="/digital-banking"
-                onClick={closeMenus}
-                className="block text-base text-gray-700 hover:text-gray-900 transition"
-              >
-                Digital Banking
-              </Link>
-              <Link
-                to="/merchant-payments"
-                onClick={closeMenus}
-                className="block text-base text-gray-700 hover:text-gray-900 transition"
-              >
-                Merchants Payments Collection
-              </Link>
-            </div>
-            
-            <Link
-              to="/company"
-              onClick={closeMenus}
-              className="block text-lg font-semibold text-[#878C91] hover:text-gray-900 transition"
-            >
-              Company
+
+          {/* Links */}
+          <div className="flex flex-col mt-10 space-y-6 text-gray-700 text-lg font-medium">
+            <Link to="/why-kuleanpay" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
+              Why Kuleanpay?
             </Link>
-            <Link
-              to="/blog"
-              onClick={closeMenus}
-              className="block text-lg font-semibold text-[#878C91] hover:text-gray-900 transition"
-            >
-              Blog
+            <details className="cursor-pointer">
+              <summary className="hover:text-black">Solutions</summary>
+              <div className="ml-4 mt-2 flex flex-col space-y-2">
+                <Link to="/escrow" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-black">
+                  Escrow
+                </Link>
+                <Link to="/digital-banking" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-black">
+                  Digital Banking
+                </Link>
+                <Link to="/merchant-payments" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-black">
+                  Merchant Payments
+                </Link>
+              </div>
+            </details>
+            <Link to="/partners" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
+              Partners
+            </Link>
+            <Link to="/company" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
+              Company
             </Link>
           </div>
 
-          <div className="flex flex-col gap-4 w-full px-5 mt-10">
-            <Link
-              to="/signup"
-              onClick={closeMenus}
-              className="w-full text-center px-4 py-3 rounded-[10px] bg-[#03045E] text-lg text-white"
+          {/* Store Buttons (Mobile) */}
+          <div className="mt-10 flex flex-col gap-3">
+            <a
+              href="#"
+              className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
             >
-              Sign up
-            </Link>
-            <Link
-              to="/login"
-              onClick={closeMenus}
-              className="w-full text-center px-4 py-3 rounded-[10px] border border-[#00000033] text-[#03045E]"
+              <FaApple className="w-5 h-5" />
+              <div className="leading-tight">
+                <p className="text-[10px]">Download on the</p>
+                <p className="text-sm font-semibold">App Store</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
             >
-              Login
-            </Link>
+              <img src={playstore} alt="Playstore" className="w-5 h-5" />
+              <div className="leading-tight">
+                <p className="text-[10px]">GET IT ON</p>
+                <p className="text-sm font-semibold">Google Play</p>
+              </div>
+            </a>
           </div>
         </div>
       )}
     </nav>
   );
 };
-
-const SolutionsDropdownMenu = ({ closeMenus }) => (
-  <div className="space-y-4">
-    {/* Item 1 */}
-    <Link
-      to="/escrow"
-      onClick={closeMenus}
-      className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition"
-    >
-      <div className="text-blue-600 text-xl">✦</div>
-      <div>
-        <h3 className="font-semibold text-gray-900">Escrow</h3>
-        <p className="text-sm text-gray-600">
-          Both Buyers and Sellers are protected and funds are held securely by us.
-        </p>
-      </div>
-    </Link>
-    {/* Item 2 */}
-    <Link
-      to="/digital-banking"
-      onClick={closeMenus}
-      className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition bg-blue-50"
-    >
-      <div className="text-blue-600 text-xl">◉</div>
-      <div>
-        <h3 className="font-semibold text-gray-900">Digital Banking</h3>
-        <p className="text-sm text-gray-600">
-          Say no to transaction delays and fraudulent transactions as you send and receive money.
-        </p>
-      </div>
-    </Link>
-    {/* Item 3 */}
-    <Link
-      to="/merchant-payments"
-      onClick={closeMenus}
-      className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition"
-    >
-      <div className="text-blue-600 text-xl">☑</div>
-      <div>
-        <h3 className="font-semibold text-gray-900">
-          Merchants Payments Collection
-        </h3>
-        <p className="text-sm text-gray-600">
-          Say no to transaction delays and fraudulent transactions as you send and receive money.
-        </p>
-      </div>
-    </Link>
-  </div>
-);
 
 export default Navbar;

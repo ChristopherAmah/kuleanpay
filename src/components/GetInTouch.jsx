@@ -19,11 +19,11 @@ const ContactSection = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-satoshi font-medium text-[#000000]">
-              Get in touch
+              Join the Kuleanpay community
             </h1>
-            <p className="mt-4 text-[#19203199] font-satoshi text-[18px]">
+            {/* <p className="mt-4 text-[#19203199] font-satoshi text-[18px]">
               We'd love to hear from you. Please fill out this form.
-            </p>
+            </p> */}
           </div>
 
           {/* Main Content */}
@@ -57,17 +57,17 @@ const ContactSection = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-[#222222] text-white text-md font-medium py-3 rounded-[8px] hover:bg-black transition-colors"
+                    className="w-full bg-[#03045E] text-white text-md font-medium py-3 rounded-full hover:bg-black transition-colors"
                   >
-                    Join Community
+                    Join
                   </button>
                 </form>
-                <p className="text-center text-[14px] font-semibold text-[#5E5E5E] mt-6">
+                {/* <p className="text-center text-[14px] font-semibold text-[#5E5E5E] mt-6">
                   Join Us On{' '}
                   <a href="#" className="font-semibold text-[#03045E] hover:underline">
                     Telegram
                   </a>
-                </p>
+                </p> */}
               </div>
 
               {/* Right Column: Image (no padding) */}

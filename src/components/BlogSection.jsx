@@ -61,7 +61,7 @@ const App = () => {
                 <h3 className="text-xl md:text-2xl font-semibold mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-sm md:text-base leading-relaxed text-[#19203199]">
+                <p className="text-sm md: leading-relaxed text-[#19203199]">
                   {benefit.description}
                 </p>
               </div>

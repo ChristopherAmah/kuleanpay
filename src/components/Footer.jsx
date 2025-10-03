@@ -2,6 +2,7 @@ import React from "react";
 import footerlogo from "../assets/footerlogo.png";
 import providus from "../assets/providus.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter    } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // --- Providus Bank Logo SVG ---
 const ProvidusBankLogo = () => (
@@ -24,49 +25,53 @@ const ProvidusBankLogo = () => (
 // --- Footer Component ---
 const Footer = () => {
   const socialLinks = [
-    { href: "#", icon: <FaFacebookF /> },
-    { href: "#", icon: <FaInstagram  /> },
-    { href: "#", icon: <FaLinkedinIn   /> },
-    { href: "#", icon: <FaTwitter    /> },
+    { href: "https://web.facebook.com/FifthlabAfrica", icon: <FaFacebookF /> },
+    { href: "https://www.instagram.com/fifthlabafrica/", icon: <FaInstagram  /> },
+    // { href: "#", icon: <FaLinkedinIn   /> },
+    { href: "https://x.com/FifthlabAfrica", icon: <FaTwitter    /> },
   ];
 
   const footerLinks = {
-    Support: [
-      { href: "#", text: "Help center" },
-      { href: "#", text: "Account information" },
-      { href: "#", text: "About" },
-      { href: "#", text: "Contact us" },
+    'QUICK LINKS': [
+      { href: "/escrow", text: "Escrow" },
+      { href: "/digital-banking", text: "Digital Banking" },
+      { href: "/partners", text: "Partners" },
+      { href: "/merchant", text: "Merchant Payment Collection" },
     ],
-    Product: [
-      { href: "#", text: "Updates" },
-      { href: "#", text: "Security" },
-      { href: "#", text: "Beta test" },
-      { href: "#", text: "Pricing product" },
+    PRODUCT: [
+      { href: "#", text: "Privacy Policy" },
+      { href: "#", text: "Terms & Conditions" },
+      { href: "#faq", text: "FAQs" },
     ],
-    "Help and Solutions": [
-      { href: "#", text: "Talk to support" },
-      { href: "#", text: "Support docs" },
-      { href: "#", text: "System status" },
-      { href: "#", text: "Covid response" },
+    DEVELOPER: [
+      { href: "#", text: "Documentation" },
+      { href: "#", text: "API" },
+    ],
+    COMPANY: [
+      { href: "/company", text: "About us" },
+      { href: "/partners", text: "Become a partner" },
+      { href: "mailto:kuleanpay.support@thefifthlab.com", text: "Contact us" }
     ],
   };
 
   return (
-  <footer className="relative bg-[#1B2333] px-6 md:px-[100px] text-white overflow-hidden">
+  <footer className="relative bg-[#1B2333] px-6 md:px-16 text-white overflow-hidden">
     {/* Decorative Blur Shape */}
     <div className="absolute -top-80 left-1/2 transform -translate-x-1/8 w-[400px] h-[400px] bg-[#6E83D1]/50 blur-3xl rounded-full pointer-events-none"></div>
 
     <div className="relative mx-auto md:py-[58.8px] py-6">
       {/* Top section */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[8fr_3fr_3fr_3fr] gap-13">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[5fr_4fr_2fr_2fr_3fr] gap-13">
         {/* Column 1: Logo + Social */}
         <div className="space-y-6">
           <div className="flex items-center gap-2">
+            <Link to={'/'}>
             <img src={footerlogo} alt="KuleanPay" className="h-10" />
+            </Link>
             <span className="text-[28.53px] font-semibold font-jakarta">KuleanPay</span>
           </div>
           <p className="text-white text-[16px] font-satoshi">
-            Powered by <span className="underline">Fifthlab</span>
+            Powered by <span className="underline"><a href="https://thefifthlab.com">Fifthlab</a></span>
           </p>
           <div className="flex space-x-4">
             {socialLinks.map((link, index) => (
