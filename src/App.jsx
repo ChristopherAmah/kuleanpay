@@ -20,23 +20,23 @@ import TermsAndCondition from './pages/TermsAndCondition'
 function App() {
   return (
     <div>
-      <Topbar />
-      <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/escrow' element={<Escrow />} />
-        <Route path='/digital-banking' element={<DigitalBanking />} />
-        <Route path='/partners' element={<Partners />} />
-        <Route path='/merchant-payments' element={<Merchant />} />
-        <Route path='/why-kuleanpay' element={<WhyKuleanpay />} />
-        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-        <Route path='/terms-of-use' element={<TermsAndCondition />} />
+        <Topbar />
+        <Navbar />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/escrow' element={<Escrow />} />
+          <Route path='/digital-banking' element={<DigitalBanking />} />
+          <Route path='/partners' element={<Partners />} />
+          <Route path='/merchant-payments' element={<Merchant />} />
+          <Route path='/why-kuleanpay' element={<WhyKuleanpay />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/terms-of-use' element={<TermsAndCondition />} />
+        <CtaSection />
+        <GetInTouch />
+        <ConnectSection />
+        <Footer />
       </Routes>
-      <CtaSection />
-      <GetInTouch />
-      <ConnectSection />
-      <Footer />
     </div>
   )
 }
