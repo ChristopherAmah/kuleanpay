@@ -16,27 +16,30 @@ import Merchant from './pages/Merchant'
 import WhyKuleanpay from './pages/WhyKuleanpay'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndCondition from './pages/TermsAndCondition'
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   return (
     <div>
+      <Topbar />
+      <Navbar />
+      <ScrollToTop />
       <Routes>
-        <Topbar />
-        <Navbar />
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/escrow' element={<Escrow />} />
-          <Route path='/digital-banking' element={<DigitalBanking />} />
-          <Route path='/partners' element={<Partners />} />
-          <Route path='/merchant-payments' element={<Merchant />} />
-          <Route path='/why-kuleanpay' element={<WhyKuleanpay />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-          <Route path='/terms-of-use' element={<TermsAndCondition />} />
-        <CtaSection />
-        <GetInTouch />
-        <ConnectSection />
-        <Footer />
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/escrow' element={<Escrow />} />
+        <Route path='/digital-banking' element={<DigitalBanking />} />
+        <Route path='/partners' element={<Partners />} />
+        <Route path='/merchant-payments' element={<Merchant />} />
+        <Route path='/why-kuleanpay' element={<WhyKuleanpay />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/terms-of-use' element={<TermsAndCondition />} />
       </Routes>
+      <CtaSection />
+      <GetInTouch />
+      <ConnectSection />
+      <Footer />
     </div>
   )
 }
