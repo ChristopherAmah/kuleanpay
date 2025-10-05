@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full bg-[#F8F8F9] px-6 lg:px-16 py-3 flex items-center justify-between relative z-50">
+    <nav className="w-full bg-[#F4F4F7] px-6 lg:px-16 py-3 flex items-center justify-between relative z-50">
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2">
         <img src={logo} alt="KuleanPay logo" className="w-[32px] h-[32px] rounded-full" />
@@ -80,22 +80,22 @@ const Navbar = () => {
       <div className="hidden md:flex items-center gap-3">
         <Link
           to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
-          className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-3 py-2 hover:scale-105 transition"
+          className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-2 py-1 hover:scale-105 transition"
         >
           <FaApple className="w-5 h-5" />
           <div className="leading-tight">
             <p className="text-[10px]">Download on the</p>
-            <p className="text-sm font-semibold">App Store</p>
+            <p className="text-sm font-medium">App Store</p>
           </div>
         </Link>
         <Link
           to={'https://play.google.com/store/apps/details?id=com.cwg.kuleanpay'}
-          className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-3 py-2 hover:scale-105 transition"
+          className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-2 py-1 hover:scale-105 transition"
         >
           <img src={playstore} alt="Playstore" className="w-5 h-5" />
           <div className="leading-tight">
             <p className="text-[10px]">GET IT ON</p>
-            <p className="text-sm font-semibold">Google Play</p>
+            <p className="text-sm font-medium">Google Play</p>
           </div>
         </Link>
       </div>
