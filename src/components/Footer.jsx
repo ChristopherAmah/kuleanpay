@@ -16,10 +16,8 @@ const Footer = () => {
     if (href.startsWith("#")) {
       const target = document.querySelector(href);
       if (target) {
-        // Smooth scroll if already on same page
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       } else if (location.pathname !== "/") {
-        // Navigate to home and then scroll after load
         sessionStorage.setItem("scrollToHash", href);
         navigate("/");
       }
@@ -51,8 +49,8 @@ const Footer = () => {
       { href: "#faq", text: "FAQs" },
     ],
     DEVELOPER: [
-      { href: "#", text: "Documentation" },
-      { href: "#", text: "API" },
+      { href: "#", text: "Documentation", badge: "Coming Soon" },
+      { href: "#", text: "API", badge: "Coming Soon" },
     ],
     COMPANY: [
       { href: "/about", text: "About us" },
@@ -118,9 +116,14 @@ const Footer = () => {
                     <a
                       href={link.href}
                       onClick={(e) => handleLinkClick(e, link.href)}
-                      className="text-[#C9D4E4] font-satoshi text-[16px] font-medium hover:text-white hover:underline transition-colors duration-300 cursor-pointer"
+                      className="flex items-center gap-2 text-[#C9D4E4] font-satoshi text-[16px] font-medium hover:text-white hover:underline transition-colors duration-300 cursor-pointer"
                     >
                       {link.text}
+                      {link.badge && (
+                        <span className="text-[10px] bg-gray-600 text-white px-2 py-[2px] rounded-full uppercase">
+                          {link.badge}
+                        </span>
+                      )}
                     </a>
                   </li>
                 ))}
