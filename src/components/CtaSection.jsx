@@ -1,6 +1,7 @@
 import React from 'react';
 import banner from '../assets/bg.png';
 import line from '../assets/line.png';
+import { Link } from 'react-router-dom';
 
 const CtaSection = () => {
   const backgroundStyle = {
@@ -37,9 +38,12 @@ const CtaSection = () => {
             Both buyers and sellers are protected with funds held in a third party
             escrow. Payments are released only after orders are fulfilled.
           </p>
-          <button className="mt-10 px-8 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+          <Link to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}>
+          <button className="mt-10 px-8 py-3 bg-white text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
             Get Started
-          </button>
+          </button> 
+          </Link>
+          
         </div>
       </div>
     </div>

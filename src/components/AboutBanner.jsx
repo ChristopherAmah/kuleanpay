@@ -25,8 +25,8 @@ const HeroSection = () => {
                 We are in the business of providing individuals and corporate bodies a secure online payment platform to reduce the growing rate of fraudulent transactions online.            </p>
             <div className="flex items-center gap-x-[14px] font-jakarta mt-3">
               <Link
-                to="/signup"
-                className="px-4 lg:px-5 py-2 rounded-[10px] bg-[#03045E] border text-white md:text-[17px] transition"
+                to="https://play.google.com/store/apps/details?id=com.cwg.kuleanpay&pli=1"
+                className="px-4 lg:px-6 py-3 rounded-[10px] bg-[#03045E] border text-white md:text-[17px] transition"
               >
                 Get Started
               </Link>

@@ -27,7 +27,7 @@ const HeroSection = () => {
             </p>
             <div className="flex items-center gap-x-[14px] font-jakarta mt-3">
               <Link
-                to="/get-started"
+                to="https://play.google.com/store/apps/details?id=com.cwg.kuleanpay&pli=1"
                 className="px-4 lg:px-5 py-2 rounded-[10px] bg-[#03045E] border text-white md:text-[17px] transition"
               >
                 Get Started

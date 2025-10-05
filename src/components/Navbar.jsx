@@ -72,14 +72,14 @@ const Navbar = () => {
           Partners
         </Link>
         <Link to="/about" className="hover:text-[#060761] transition">
-          About
+          About Us
         </Link>
       </div>
 
       {/* Store Buttons (Desktop only) */}
       <div className="hidden md:flex items-center gap-3">
-        <a
-          href="#"
+        <Link
+          to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
           className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-3 py-2 hover:scale-105 transition"
         >
           <FaApple className="w-5 h-5" />
@@ -87,9 +87,9 @@ const Navbar = () => {
             <p className="text-[10px]">Download on the</p>
             <p className="text-sm font-semibold">App Store</p>
           </div>
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to={'https://play.google.com/store/apps/details?id=com.cwg.kuleanpay'}
           className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-3 py-2 hover:scale-105 transition"
         >
           <img src={playstore} alt="Playstore" className="w-5 h-5" />
@@ -97,7 +97,7 @@ const Navbar = () => {
             <p className="text-[10px]">GET IT ON</p>
             <p className="text-sm font-semibold">Google Play</p>
           </div>
-        </a>
+        </Link>
       </div>
 
       {/* Hamburger Icon (Mobile only) */}
@@ -151,14 +151,14 @@ const Navbar = () => {
               Partners
             </Link>
             <Link to="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
-              About
+              About Us
             </Link>
           </div>
 
           {/* Store Buttons (Mobile) */}
           <div className="mt-10 flex flex-col gap-3">
-            <a
-              href="#"
+            <Link
+              to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
               className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
             >
               <FaApple className="w-5 h-5" />
@@ -166,9 +166,9 @@ const Navbar = () => {
                 <p className="text-[10px]">Download on the</p>
                 <p className="text-sm font-semibold">App Store</p>
               </div>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to={'https://play.google.com/store/apps/details?id=com.cwg.kuleanpay'}
               className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
             >
               <img src={playstore} alt="Playstore" className="w-5 h-5" />
@@ -176,7 +176,7 @@ const Navbar = () => {
                 <p className="text-[10px]">GET IT ON</p>
                 <p className="text-sm font-semibold">Google Play</p>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       )}

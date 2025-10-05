@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
@@ -15,12 +16,12 @@ const Topbar = () => {
       </p>
 
       {/* Link */}
-      <a
-        href="#"
+      <Link
+        to={'/why-kuleanpay'}
         className="text-white font-bold font-satoshi underline text-[12px] hover:text-[#4E6CDB] transition"
       >
         Learn more
-      </a>
+      </Link>
     </div>
   );
 };

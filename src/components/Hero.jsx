@@ -4,6 +4,7 @@ import hero from "../assets/herobg.png";
 import playstore from "../assets/playstore.png";
 import { FaApple, FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import banner from "../assets/banner.jpg";
+import { Link } from "react-router-dom";
 
 // ⭐ Reusable Rating Component
 const Rating = ({ rating = 4.5 }) => {
@@ -60,8 +61,8 @@ const HeroSection = () => {
 
             {/* Store Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row lg:items-start gap-4">
-              <a
-                href="#"
+              <Link
+                to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
                 className="flex items-center gap-3 bg-[#01011C] border border-[#A6A6A6] text-white rounded-lg px-3 py-2 md:px-3 md:py-2 w-40 md:w-auto transition-transform duration-300 hover:scale-105"
               >
                 <FaApple className="w-5 h-5 md:w-7 md:h-7" />
@@ -71,10 +72,10 @@ const HeroSection = () => {
                     App Store
                   </p>
                 </div>
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                to={'https://play.google.com/store/apps/details?id=com.cwg.kuleanpay'}
                 className="flex items-center gap-3 bg-[#01011C] border border-[#A6A6A6] text-white rounded-lg px-3 py-2 md:px-3 md:py-2 w-40 md:w-auto transition-transform duration-300 hover:scale-105"
               >
                 <img
@@ -88,7 +89,7 @@ const HeroSection = () => {
                     Google Play
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             {/* Rating Section */}

@@ -3,6 +3,7 @@ import { FaApple, FaGooglePlay } from "react-icons/fa";
 import phoneandlaptop from "../assets/phoneandlaptop.png";
 import bg from "../assets/bg.png";
 import playstore from "../assets/playstore.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -23,8 +24,8 @@ const Hero = () => {
 
       {/* Store Buttons */}
       <div className="flex justify-center items-center gap-4 mt-6">
-        <a
-          href="#"
+        <Link
+          to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
           className="flex items-center bg-[#01011C] text-white rounded-lg px-4 py-2 gap-2 border border-[#A6A6A6] hover:bg-gray-800 transition"
         >
           <FaApple size={20} />
@@ -32,10 +33,10 @@ const Hero = () => {
             <p className="text-xs">Download on the</p>
             <p className="font-semibold text-sm">App Store</p>
           </div>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to={'https://play.google.com/store/apps/details?id=com.cwg.kuleanpay'}
           className="flex items-center gap-2 bg-[#01011C] text-white rounded-lg px-4 py-2 border border-[#A6A6A6] hover:bg-gray-800 transition"
         >
           <img src={playstore} alt="Playstore" className="w-5 h-5" />
@@ -43,7 +44,7 @@ const Hero = () => {
             <p className="text-xs">GET IT ON</p>
             <p className="text-sm font-semibold">Google Play</p>
           </div>
-        </a>
+        </Link>
       </div>
 
       {/* Mockup Preview - Top Half Only (Responsive) */}

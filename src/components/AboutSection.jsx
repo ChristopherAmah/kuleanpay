@@ -31,7 +31,7 @@ const HowItWorks = () => {
         <div className="bg-[#F5F5F5] rounded-[20px] overflow-hidden flex flex-col-reverse">
           <div className="p-6">
             <h3 className="text-2xl font-medium mb-2">Our Vision</h3>
-            <p className="text-[#7C7C7C] text-sm leading-relaxed">
+            <p className="text-[#7C7C7C] text-[20px] leading-relaxed">
               To build high tech IT solutions that empower people and businesses
             </p>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import join from "../assets/join.png"; // ✅ Ensure this path is correct
+import { Link } from "react-router-dom";
 
 const ContactSection = () => {
   // Background grid style
@@ -75,12 +76,12 @@ const ContactSection = () => {
               {/* Telegram link */}
               <p className="text-center text-[14px] font-semibold text-[#5E5E5E] mt-6">
                 Join Us On{" "}
-                <a
-                  href="#"
+                <Link
+                  to={'https://t.me/kuleanpay'}
                   className="font-semibold text-[#03045E] hover:underline"
                 >
                   Telegram
-                </a>
+                </Link>
               </p>
             </div>
           </div>
