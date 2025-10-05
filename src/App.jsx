@@ -14,6 +14,8 @@ import DigitalBanking from './pages/DigitalBanking'
 import Partners from './pages/Partners'
 import Merchant from './pages/Merchant'
 import WhyKuleanpay from './pages/WhyKuleanpay'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsAndCondition from './pages/TermsAndCondition'
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path='/partners' element={<Partners />} />
         <Route path='/merchant-payments' element={<Merchant />} />
         <Route path='/why-kuleanpay' element={<WhyKuleanpay />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/terms-of-use' element={<TermsAndCondition />} />
       </Routes>
       <CtaSection />
       <GetInTouch />

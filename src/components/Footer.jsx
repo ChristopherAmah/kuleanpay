@@ -40,8 +40,8 @@ const Footer = () => {
       { href: "/merchant", text: "Merchant Payment Collection" },
     ],
     PRODUCT: [
-      { href: "#", text: "Privacy Policy" },
-      { href: "#", text: "Terms & Conditions" },
+      { href: "/privacy-policy", text: "Privacy Policy" },
+      { href: "/terms-of-use", text: "Terms & Conditions" },
       { href: "#faq", text: "FAQs" },
     ],
     DEVELOPER: [
