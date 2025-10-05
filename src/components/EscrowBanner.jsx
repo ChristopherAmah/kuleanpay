@@ -14,14 +14,14 @@ const HeroSection = () => {
       }}
     >
       <div className="container relative z-10 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-[600px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-screen">
           
           {/* Left Column: Text */}
-          <div className="flex flex-col text-left lg:items-start lg:text-left px-6 sm:px-6 lg:px-16">
-            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] leading-tight" style={{fontStyle: "satoshi"}}>
+          <div className="flex flex-col text-left lg:items-start lg:text-left px-6 sm:px-6 lg:pl-16">
+            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632]" style={{fontStyle: "satoshi"}}>
               Go Escrow<br />with <br />Kuleanpay
             </h1>
-            <p className="mt-4 font-satoshi md:max-w-xl lg:max-w-lg  lg:text-[18px] md:font-medium text-[#19203199]">
+            <p className="mt-4 font-satoshi md:max-w-xl lg:max-w-md  lg:text-[18px]  text-[#19203199]">
               Both buyers and sellers are protected and funds held securely by us. Payments are released only after orders are fulfilled.
             </p>
           </div> {/* ✅ closed left column properly */}

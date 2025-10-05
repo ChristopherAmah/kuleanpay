@@ -14,14 +14,14 @@ const HeroSection = () => {
       }}
     >
       <div className="container relative z-10 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-[600px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-screen">
           
           {/* Left Column: Text */}
-          <div className="flex flex-col lg:items-start text-left lg:text-left px-6 sm:px-6 lg:px-16">
-            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] leading-tight">
+          <div className="flex flex-col lg:items-start text-left lg:text-left px-6 sm:px-6 lg:px-16 md:pl-16">
+            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632]">
               About <br />Kuleanpay
             </h1>
-            <p className="mt-4 font-satoshi lg:max-w-lg  lg:text-[18px] md:font-medium text-[#19203199]">
+            <p className="mt-4 font-satoshi lg:max-w-lg  lg:text-[18px] text-[#19203199]">
                 We are in the business of providing individuals and corporate bodies a secure online payment platform to reduce the growing rate of fraudulent transactions online.            </p>
             <div className="flex items-center gap-x-[14px] font-jakarta mt-3">
               <Link

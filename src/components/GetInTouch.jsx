@@ -1,88 +1,102 @@
-import React from 'react';
-import connect from '../assets/connect.png'; // Ensure this path is correct
+import React from "react";
+import join from "../assets/join.png"; // ✅ Ensure this path is correct
 
 const ContactSection = () => {
-  // Inline style for the background grid pattern
+  // Background grid style
   const backgroundStyle = {
-    backgroundColor: '#f7f8fa', // A very light gray
+    backgroundColor: "#EDF5FB",
     backgroundImage: `
       linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px)
     `,
-    backgroundSize: '3rem 3rem', // Size of the grid squares
+    backgroundSize: "3rem 3rem",
   };
 
   return (
-    <section className="md:px-20">
-      <div className="w-full py-8 lg:py-8">
-        <div className="container mx-auto px-4">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-satoshi font-medium text-[#000000]">
-              Join the Kuleanpay community
-            </h1>
-            {/* <p className="mt-4 text-[#19203199] font-satoshi text-[18px]">
-              We'd love to hear from you. Please fill out this form.
-            </p> */}
+    <section className="md:px-16 lg:px-16 py-12">
+      {/* Header */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-6xl font-satoshi font-medium text-[#000000]">
+          Join the Kuleanpay Community
+        </h1>
+      </div>
+
+      {/* Main Grid */}
+      <div
+        style={backgroundStyle}
+        className="rounded-[21px] overflow-hidden"
+      >
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
+          {/* LEFT: Form Card */}
+          <div className="flex justify-center items-center py-3 px-3">
+            <div className="bg-white rounded-[14px] p-8 sm:p-10 w-full">
+              <form>
+                {/* Name */}
+                <div className="mb-6">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-[#5E5E5E] mb-2"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Jacob Moore"
+                    className="w-full px-4 py-3 bg-[#F5F5F5] rounded-[12px] border-transparent focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
+                  />
+                </div>
+
+                {/* Email */}
+                <div className="mb-8">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-[#5E5E5E] mb-2"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="name@email.com"
+                    className="w-full px-4 py-3 bg-[#F5F5F5] rounded-[12px] border-transparent focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
+                  />
+                </div>
+
+                {/* Join Button */}
+                <button
+                  type="submit"
+                  className="w-full bg-[#03045E] text-white text-md font-medium py-3 rounded-full hover:bg-black transition-colors"
+                >
+                  Join
+                </button>
+              </form>
+
+              {/* Telegram link */}
+              <p className="text-center text-[14px] font-semibold text-[#5E5E5E] mt-6">
+                Join Us On{" "}
+                <a
+                  href="#"
+                  className="font-semibold text-[#03045E] hover:underline"
+                >
+                  Telegram
+                </a>
+              </p>
+            </div>
           </div>
 
-          {/* Main Content */}
-          <div style={backgroundStyle}>
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
-              
-              {/* Left Column: Form (with padding) */}
-              <div className="bg-white m-4 mr-0 p-8 sm:p-10">
-                <form>
-                  <div className="mb-6">
-                    <label htmlFor="name" className="block text-sm font-medium text-[#5E5E5E] mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      placeholder="Jacob Moore"
-                      className="w-full px-4 py-3 bg-[#F5F5F5] rounded-[12px] border-transparent focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
-                    />
-                  </div>
-                  <div className="mb-8">
-                    <label htmlFor="email" className="block text-sm font-medium text-[#5E5E5E] mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="name@email.com"
-                      className="w-full px-4 py-3 bg-[#F5F5F5] rounded-[12px] border-transparent focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-[#03045E] text-white text-md font-medium py-3 rounded-full hover:bg-black transition-colors"
-                  >
-                    Join
-                  </button>
-                </form>
-                {/* <p className="text-center text-[14px] font-semibold text-[#5E5E5E] mt-6">
-                  Join Us On{' '}
-                  <a href="#" className="font-semibold text-[#03045E] hover:underline">
-                    Telegram
-                  </a>
-                </p> */}
-              </div>
-
-              {/* Right Column: Image (no padding) */}
-              <div className="hidden lg:block h-full w-full">
-                <img
-                  src={connect}
-                  alt="Community illustration with colorful hands around a central logo"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = 'https://placehold.co/600x400/f0f0f0/333?text=Image+Not+Found';
-                  }}
-                />
-              </div>
-            </div>
+          {/* RIGHT: Image */}
+          <div className="flex justify-center items-center">
+            <img
+              src={join}
+              alt="Kuleanpay Community"
+              className="w-4/5 md:w-[70%] h-auto object-contain mx-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src =
+                  "https://placehold.co/600x400/f0f0f0/333?text=Image+Not+Found";
+              }}
+            />
           </div>
         </div>
       </div>

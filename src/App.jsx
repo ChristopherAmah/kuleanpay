@@ -11,8 +11,9 @@ import ConnectSection from './components/ConnectSection'
 import Footer from './components/Footer'
 import Escrow from './pages/Escrow'
 import DigitalBanking from './pages/DigitalBanking'
-import Blog from './pages/Blog'
+import Partners from './pages/Partners'
 import Merchant from './pages/Merchant'
+import WhyKuleanpay from './pages/WhyKuleanpay'
 
 function App() {
   return (
@@ -21,11 +22,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/company' element={<About />} />
+        <Route path='/about' element={<About />} />
         <Route path='/escrow' element={<Escrow />} />
         <Route path='/digital-banking' element={<DigitalBanking />} />
-        <Route path='/blog' element={<Blog />} />
+        <Route path='/partners' element={<Partners />} />
         <Route path='/merchant-payments' element={<Merchant />} />
+        <Route path='/why-kuleanpay' element={<WhyKuleanpay />} />
       </Routes>
       <CtaSection />
       <GetInTouch />

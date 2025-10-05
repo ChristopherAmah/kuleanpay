@@ -50,8 +50,8 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="bg-white font-sans py-8 px-6 md:px-8 lg:px-16">
-      <div className="container mx-auto max-w-7xl">
+    <section className="bg-white font-sans py-12 px-6 md:px-8 lg:px-16">
+      <div className="container mx-auto">
         {/* Section Heading */}
         <h2 className="text-4xl md:text-5xl font-semibold lg:font-medium text-center text-[#000000] mb-8 lg:mb-16">
           How It Works
@@ -85,14 +85,14 @@ const HowItWorks = () => {
 
             {/* Text Content */}
             <div
-              className={`w-full lg:w-1/2 ${
+              className={`w-full lg:max-w-xl ${
                 step.reverse ? "lg:pr-16" : "lg:pl-16"
               } text-center lg:text-left gap-6`}
             >
               <h3 className="text-2xl md:text-3xl font-medium text-[#000000] mb-4">
                 {step.title}
               </h3>
-              <p className="text-[#192031CC] leading-relaxed text-left md:text-[20px]">
+              <p className="text-[#192031CC] text-left md:text-[20px]">
                 {step.description}
               </p>
             </div>

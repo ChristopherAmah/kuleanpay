@@ -12,15 +12,15 @@ const CashPaymentIcon = () => <img src={fraud3} alt="Cash Payment Icon" classNam
 // --- Reusable Feature Card Component ---
 const FeatureCard = ({ icon, title, children }) => {
   return (
-    <div className="relative bg-[#F3F7FB] p-6 rounded-[16px] h-full overflow-hidden">
+    <div className="relative bg-[#E9F4FF] p-6 rounded-[16px] h-full overflow-hidden">
       {/* Big faded background icon */}
-      <div className="absolute -top-6 -right-6 opacity-10 w-[174.38px] h-[174.38px]">
+      <div className="absolute -top-6 -right-20 opacity-30 w-[174.38px] h-[174.38px]">
         {icon}
       </div>
       {/* Content on top */}
       <div className="relative z-10">
-        <h3 className="text-[20px] font-medium text-[#000000] mt-4 pt-10">{title}</h3>
-        <p className="text-[#7C7C7C] text-md leading-relaxed mt-4">{children}</p>
+        <h3 className="text-[20px] font-medium text-[#000000] mt-4 pt-15">{title}</h3>
+        <p className="text-[#7C7C7C] text-md mt-4">{children}</p>
       </div>
     </div>
   );
@@ -29,15 +29,15 @@ const FeatureCard = ({ icon, title, children }) => {
 // --- Main Fraud Protection Section Component ---
 const FraudProtectionSection = () => {
   return (
-    <section className="bg-white font-sans py-12 sm:py-16">
-      <div className="container mx-auto px-4 lg:px-16">
+    <section className="bg-white font-sans py-12 sm:py-16 px-8 md:px-16">
+      <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Column: Text Content */}
           <div className="pr-4 lg:pr-0">
-            <h2 className="text-3xl sm:text-4xl font-medium text-[#000000] leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#000000]">
               Taking away the risks of fraudulent transactions
             </h2>
-            <p className="mt-4 sm:mt-6  sm:text-[16px] font-medium text-[#19203199]">
+            <p className="mt-4 sm:mt-6 sm:text-[16px] font-medium text-[#19203199] md:max-w-sm">
               Kuleanpay provides simple and transparent payment solutions to the legal and professional services industries and to marketplaces and e-commerce platforms.
             </p>
           </div>
@@ -45,7 +45,7 @@ const FraudProtectionSection = () => {
           {/* Right Column: Feature Cards */}
           <div className="grid grid-cols-1 gap-6 sm:gap-8">
             <div className="grid sm:grid-cols-2 gap-6">
-              <FeatureCard title="Buy & Sell with Escrow" icon={<EscrowIcon />}>
+              <FeatureCard title="Buy & Sell with Escrow" icon={<EscrowIcon />} >
                 Get fortified when you create or join a transaction as a buyer or seller. Send and receive messages with our chat feature, and have the peace of mind you deserve.
               </FeatureCard>
               <FeatureCard title="Merchant Payment Collection" icon={<MobilePaymentIcon />}>

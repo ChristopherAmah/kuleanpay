@@ -3,6 +3,7 @@ import footerlogo from "../assets/footerlogo.png";
 import providus from "../assets/providus.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter    } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
 
 // --- Providus Bank Logo SVG ---
 const ProvidusBankLogo = () => (
@@ -28,7 +29,7 @@ const Footer = () => {
     { href: "https://web.facebook.com/FifthlabAfrica", icon: <FaFacebookF /> },
     { href: "https://www.instagram.com/fifthlabafrica/", icon: <FaInstagram  /> },
     // { href: "#", icon: <FaLinkedinIn   /> },
-    { href: "https://x.com/FifthlabAfrica", icon: <FaTwitter    /> },
+    { href: "https://x.com/FifthlabAfrica", icon: <FaXTwitter    /> },
   ];
 
   const footerLinks = {
@@ -112,9 +113,9 @@ const Footer = () => {
       {/* Bottom section */}
       <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0 text-sm text-white">
         <p className="font-satoshi text-[16px] font-medium">
-          &copy; {new Date().getFullYear()} Kuleanpay. All rights reserved.
+          &copy; {new Date().getFullYear()} Kuleanpay. Copyright and All rights reserved.
         </p>
-        <div className="flex items-center space-x-4 font-satoshi text-[16px] font-medium">
+        {/* <div className="flex items-center space-x-4 font-satoshi text-[16px] font-medium">
           <a href="#" className="hover:text-white hover:underline">
             Terms and Conditions
           </a>
@@ -122,7 +123,7 @@ const Footer = () => {
           <a href="#" className="hover:text-white hover:underline">
             Privacy Policy
           </a>
-        </div>
+        </div> */}
         <div className="flex items-center font-satoshi text-[16px] font-medium">
           <img src={providus} alt="" className="w-[23px] h-[19.59px]" />
           <span>Payments Processed by Providus Bank</span>

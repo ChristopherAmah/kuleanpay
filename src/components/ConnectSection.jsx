@@ -2,6 +2,7 @@ import React from "react";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import phoneandlaptop from "../assets/phoneandlaptop.png";
 import bg from "../assets/bg.png";
+import playstore from "../assets/playstore.png";
 
 const Hero = () => {
   return (
@@ -14,17 +15,17 @@ const Hero = () => {
       }}
     >
       {/* Heading */}
-      <h1 className="text-3xl md:text-4xl px-2 font-semibold text-gray-900 leading-snug">
+      <h1 className="text-3xl md:text-5xl px-2 font-bold text-[#1B2632]">
         Let’s connect and manage your{" "}
         <br className="hidden md:block" /> finances with{" "}
-        <span className="text-indigo-500 font-bold">Kuleanpay</span>
+        <span className="text-[#5E7CEE] font-bold">Kuleanpay.</span>
       </h1>
 
       {/* Store Buttons */}
       <div className="flex justify-center items-center gap-4 mt-6">
         <a
           href="#"
-          className="flex items-center bg-black text-white rounded-lg px-4 py-2 gap-2 hover:bg-gray-800 transition"
+          className="flex items-center bg-[#01011C] text-white rounded-lg px-4 py-2 gap-2 border border-[#A6A6A6] hover:bg-gray-800 transition"
         >
           <FaApple size={20} />
           <div className="text-left">
@@ -35,12 +36,12 @@ const Hero = () => {
 
         <a
           href="#"
-          className="flex items-center bg-black text-white rounded-lg px-4 py-2 gap-2 hover:bg-gray-800 transition"
+          className="flex items-center gap-2 bg-[#01011C] text-white rounded-lg px-4 py-2 border border-[#A6A6A6] hover:bg-gray-800 transition"
         >
-          <FaGooglePlay size={20} />
+          <img src={playstore} alt="Playstore" className="w-5 h-5" />
           <div className="text-left">
             <p className="text-xs">GET IT ON</p>
-            <p className="font-semibold text-sm">Google Play</p>
+            <p className="text-sm font-semibold">Google Play</p>
           </div>
         </a>
       </div>

@@ -8,13 +8,13 @@ const StatsSection = () => {
     <section className="hidden lg:block bg-[#03045E] text-white py-12 px-6 lg:px-16 relative overflow-hidden">
       {/* Left Background Image */}
       <div
-        className="absolute bottom-0 left-0 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] bg-no-repeat bg-contain"
+        className="absolute bottom-0 left-0 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[500px] bg-no-repeat bg-contain"
         style={{ backgroundImage: `url(${stat})`, backgroundPosition: 'bottom left' }}
       ></div>
 
       {/* Right Background Image */}
       <div
-        className="absolute top-0 right-0 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] bg-no-repeat bg-contain"
+        className="absolute top-0 right-0 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[500px] lg:h-[400px] bg-no-repeat bg-contain"
         style={{ backgroundImage: `url(${stat})`, backgroundPosition: 'top right' }}
       ></div>
 
@@ -34,7 +34,7 @@ const StatsSection = () => {
         {/* Left Section: Headline */}
         <div className="text-center lg:text-left flex-shrink-0">
           <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Save times by having <br className="hidden sm:inline" /> in one platform
+            Saves time by having <br className="hidden sm:inline" /> in one platform
           </h2>
         </div>
 
@@ -43,19 +43,19 @@ const StatsSection = () => {
           {/* Stat 1 */}
           <div>
             <p className="text-5xl lg:text-6xl font-bold">5.1m+</p>
-            <p className="text-sm mt-1 text-gray-300">Downloaded</p>
+            <p className="text-sm mt-1 text-[#FFFFFF80]/50">Downloads</p>
           </div>
 
           {/* Stat 2 */}
           <div>
             <p className="text-5xl lg:text-6xl font-bold">4.2m+</p>
-            <p className="text-sm mt-1 text-gray-300">User Active</p>
+            <p className="text-sm mt-1 text-[#FFFFFF80]/50">Active Users</p>
           </div>
 
           {/* Stat 3 */}
           <div>
-            <p className="text-5xl lg:text-6xl font-bold">40+</p>
-            <p className="text-sm mt-1 text-gray-300">Countries</p>
+            <p className="text-5xl lg:text-6xl font-bold">97%</p>
+            <p className="text-sm mt-1 text-[#FFFFFF80]">Customer Satisfaction</p>
           </div>
         </div>
       </div>

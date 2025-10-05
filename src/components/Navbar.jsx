@@ -28,8 +28,8 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Nav */}
-      <div className="hidden md:flex items-center gap-x-8 text-[#666] font-medium">
-        <Link to="/why-kuleanpay" className="hover:text-black transition">
+      <div className="hidden md:flex items-center gap-x-8 text-[#878C91] text-[16px] font-medium">
+        <Link to="/why-kuleanpay" className="hover:text-[#060761] transition">
           Why Kuleanpay?
         </Link>
 
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div ref={solutionsRef} className="relative">
           <button
             onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-            className="flex items-center gap-1 hover:text-black transition"
+            className="flex items-center gap-1 hover:text-[#060761] transition"
           >
             Solutions
             <svg
@@ -55,24 +55,24 @@ const Navbar = () => {
 
           {isSolutionsOpen && (
             <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg w-48 p-3 z-50">
-              <Link to="/escrow" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded">
+              <Link to="/escrow" className="block px-3 py-2 text-sm text-[#878C91] hover:bg-gray-100 rounded">
                 Escrow
               </Link>
-              <Link to="/digital-banking" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded">
+              <Link to="/digital-banking" className="block px-3 py-2 text-sm text-[#878C91] hover:bg-gray-100 rounded">
                 Digital Banking
               </Link>
-              <Link to="/merchant-payments" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded">
+              <Link to="/merchant-payments" className="block px-3 py-2 text-sm text-[#878C91] hover:bg-gray-100 rounded">
                 Merchant Payments
               </Link>
             </div>
           )}
         </div>
 
-        <Link to="/partners" className="hover:text-black transition">
+        <Link to="/partners" className="hover:text-[#060761] transition">
           Partners
         </Link>
-        <Link to="/company" className="hover:text-black transition">
-          Company
+        <Link to="/about" className="hover:text-[#060761] transition">
+          About
         </Link>
       </div>
 
@@ -80,7 +80,7 @@ const Navbar = () => {
       <div className="hidden md:flex items-center gap-3">
         <a
           href="#"
-          className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
+          className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-3 py-2 hover:scale-105 transition"
         >
           <FaApple className="w-5 h-5" />
           <div className="leading-tight">
@@ -90,7 +90,7 @@ const Navbar = () => {
         </a>
         <a
           href="#"
-          className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
+          className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-3 py-2 hover:scale-105 transition"
         >
           <img src={playstore} alt="Playstore" className="w-5 h-5" />
           <div className="leading-tight">
@@ -150,8 +150,8 @@ const Navbar = () => {
             <Link to="/partners" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
               Partners
             </Link>
-            <Link to="/company" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
-              Company
+            <Link to="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
+              About
             </Link>
           </div>
 

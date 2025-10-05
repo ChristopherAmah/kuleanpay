@@ -37,7 +37,7 @@ const CtaSection = () => {
             Both buyers and sellers are protected with funds held in a third party
             escrow. Payments are released only after orders are fulfilled.
           </p>
-          <button className="mt-10 px-8 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+          <button className="mt-10 px-8 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
             Get Started
           </button>
         </div>

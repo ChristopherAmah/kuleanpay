@@ -20,7 +20,7 @@ const cards = [
 const TwoCardsSection = () => {
   return (
     <section className="bg-white font-sans py-8 px-4 md:px-8 lg:px-16">
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-7xl" id='digitalhowitworks'>
         {/* Section Heading */}
         <h2 className="text-4xl md:text-5xl font-semibold lg:font-medium text-center text-[#000000] mb-8 lg:mb-16">
           How It Works
