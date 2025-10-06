@@ -48,7 +48,7 @@ const FraudProtectionSection = () => {
               <FeatureCard title="Buy & Sell with Escrow" icon={<EscrowIcon />} >
                 Get fortified when you create or join a transaction as a buyer or seller. Send and receive messages with our chat feature, and have the peace of mind you deserve.
               </FeatureCard>
-              <FeatureCard title="Merchant Payment Collection" icon={<MobilePaymentIcon />}>
+              <FeatureCard title="Digital Banking" icon={<MobilePaymentIcon />}>
                 Enjoy instant and seamless transactions when you send and receive money by using our digital banking feature.
               </FeatureCard>
             </div>

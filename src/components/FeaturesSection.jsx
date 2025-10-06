@@ -59,7 +59,7 @@ const FeaturesSection = () => {
                 3
               </div>
               <div>
-                <h3 className="font-semibold">Bank With Kuleanpay</h3>
+                <h3 className="font-semibold">Merchant Payment Collection</h3>
                 <p className="text-gray-400 text-sm mt-1">
                   We ensure that the app is used safely and correctly, and that
                   you can manage your own wallet in one place.
