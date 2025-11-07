@@ -17,6 +17,7 @@ import WhyKuleanpay from './pages/WhyKuleanpay'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndCondition from './pages/TermsAndCondition'
 import ScrollToTop from "./components/ScrollToTop";
+import Savings from './pages/Savings'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path='/digital-banking' element={<DigitalBanking />} />
         <Route path='/partners' element={<Partners />} />
         <Route path='/merchant-payments' element={<Merchant />} />
+        <Route path='/savingsandmore' element={<Savings />} />
         <Route path='/why-kuleanpay' element={<WhyKuleanpay />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/terms-of-use' element={<TermsAndCondition />} />

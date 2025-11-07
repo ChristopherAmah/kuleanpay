@@ -13,7 +13,7 @@ const HeroSection = () => {
         backgroundPosition: 'center'
       }}
     >
-      <div className="container relative z-10 mx-auto">
+      <div className=" relative z-10 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-screen">
           
           {/* Left Column: Text */}

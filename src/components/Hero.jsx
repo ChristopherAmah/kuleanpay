@@ -46,7 +46,7 @@ const HeroSection = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="container relative z-10">
+      <div className=" relative z-10">
         <div className="flex flex-col lg:grid lg:grid-cols-[5fr_5fr] items-center min-h-screen">
           {/* Left Column: Text */}
           <div className="order-1 lg:order-1 lg:pl-16 px-6 lg:px-0">

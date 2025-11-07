@@ -13,8 +13,8 @@ const HeroSection = () => {
         backgroundPosition: 'center'
       }}
     >
-      <div className="container relative z-10 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-screen">
+      <div className=" relative z-10 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-[90vh]">
           
           {/* Left Column: Text */}
           <div className="flex flex-col lg:items-start text-left lg:text-left px-6 sm:px-6 lg:px-16 md:pl-16">
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
           {/* Right Column: Gradient Overlay */}
           <div className="hidden lg:block w-full h-full relative">
-            <div className="absolute inset-0 bg-[#D4D5FF] z-10">
+            <div className="absolute inset-0 bg-[#D4D5FF] z-10 md:py-40">
                 <img src={about} alt="" className='bg-cover mx-auto justify-center'/>
             </div>
           </div>

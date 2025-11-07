@@ -64,6 +64,9 @@ const Navbar = () => {
               <Link to="/merchant-payments" className="block px-3 py-2 text-sm text-[#878C91] hover:bg-gray-100 rounded">
                 Merchant Payments
               </Link>
+              <Link to="/savingsandmore" className="block px-3 py-2 text-sm text-[#878C91] hover:bg-gray-100 rounded">
+                Savings and More
+              </Link>
             </div>
           )}
         </div>
@@ -144,6 +147,9 @@ const Navbar = () => {
                 </Link>
                 <Link to="/merchant-payments" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-black">
                   Merchant Payments
+                </Link>
+                <Link to="/savingsandmore" onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-black">
+                  Savings and More
                 </Link>
               </div>
             </details>

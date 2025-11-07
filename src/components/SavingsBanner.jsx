@@ -1,11 +1,9 @@
 import React from 'react';
 import herobg from '../assets/hero.jpg'; // The main background image
-import hero from '../assets/herobg.png'; // This image will be used for the right-side gradient and mockups
-import banner from '../assets/banner.jpg'; // The banner at the bottom
+import savingsbanner from '../assets/savingsbanner.png'; // This image will be used for the right-side gradient and mockups
 import { Link } from 'react-router-dom';
 import playstore from "../assets/playstore.png";
-import { FaApple } from "react-icons/fa";
-import blogbanner from '../assets/blogbanner.png'
+import { FaApple} from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -21,16 +19,12 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-screen">
           
           {/* Left Column: Text */}
-          <div className="flex flex-col lg:items-start text-left lg:text-left px-6 sm:px-6 lg:pl-16">
+          <div className="flex flex-col lg:items-start text-left lg:text-left px-6 sm:px-6 lg:px-16">
             <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632]">
-              Become a<br />partner with <br />Kuleanpay
+              Savings & <br />More
             </h1>
             <p className="mt-4 font-satoshi lg:max-w-lg  lg:text-[18px] text-[#19203199]">
-              Make money when you partner with Kuleanpay as you
-              leverage our world class API to help you to grow your
-              business and accept safe payments. With just a few lines of
-              code, you can quickly create safe, quick services and start
-              taking payments.
+              Build better money habits with Kuleanpay. From smart savings to secure payments, every feature is designed to help you take full control of your finances. 
             </p>
             {/* <div className="flex items-center gap-x-[14px] font-jakarta mt-3">
               <Link
@@ -84,7 +78,7 @@ const HeroSection = () => {
           {/* Right Column: Gradient Overlay */}
           <div className="hidden lg:block w-full h-full relative">
             <div className="absolute inset-0 bg-[#D4D5FF] z-10">
-                <img src={blogbanner} alt="" className='bg-cover mx-auto justify-center'/>
+                <img src={savingsbanner} alt="" className='bg-cover mx-auto justify-center'/>
             </div>
           </div>
           
