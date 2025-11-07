@@ -48,7 +48,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 space-y-24">
+    <section className="max-w-7xl mx-auto py-20 md:px-20 px-6 space-y-24">
         {/* Section Heading */}
         <h2 className="text-4xl md:text-5xl text-[#000000] font-semibold font-satoshi text-center mb-8 lg:mb-16">
           How It Works
