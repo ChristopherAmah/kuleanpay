@@ -1,18 +1,18 @@
 import React from 'react';
-import escrowa from '../assets/escrowa.png'
-import escrowb from '../assets/escrowb.png'
+import digitala from '../assets/digitala.png'
+import digitailb from '../assets/digitailb.png'
 
 const cards = [
   {
     title: "Create An Account",
     description: "Create an account via web or mobile and go to your account settings and complete KYC verification for tier 1 and 2. Your account will be verified instantly and you will be issued an account number. Your account number will be visible when you choose the fund wallet by bank transfer option.",
-    image: escrowa,
+    image: digitala,
     reverse: false,
   },
   {
     title: "Send & Receive Money Instantly",
     description: "Say no to transaction delays and fraudulent transactions because we offer you multiple payment options with super-fast transaction time. We support all local banks in Nigeria.",
-    image: escrowb,
+    image: digitailb,
     reverse: true,
   },
 ];
