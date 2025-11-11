@@ -14,10 +14,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="md:px-16 lg:px-16 pt-6 sm:pb-12">
+    <section className="md:px-16 lg:px-16 sm:pb-12 pt-12">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-satoshi font-medium text-[#000000]">
+        <h1 className="text-3xl md:text-4xl font-satoshi font-medium text-[#000000] px-6">
           Join the Kuleanpay Community
         </h1>
       </div>

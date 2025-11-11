@@ -48,7 +48,7 @@ const HeroSection = () => {
       }}
     >
       <div className=" relative z-10">
-        <div className="flex flex-col lg:grid lg:grid-cols-[5fr_5fr] items-center min-h-screen">
+        <div className="flex flex-col lg:grid lg:grid-cols-[5fr_5fr] items-center">
           {/* Left Column: Text */}
           <div className="order-1 lg:order-1 lg:pl-16 px-6 lg:px-0">
             <h1 className="text-4xl lg:text-7xl font-bold font-satoshi pt-20 md:pt-0 text-[#1B2632]">

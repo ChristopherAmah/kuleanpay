@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:py-0">
           
           {/* Left Column: Text */}
-          <div className="flex flex-col lg:items-start text-left px-6 sm:px-6 lg:px-16 py-6">
+          <div className="flex flex-col lg:items-start text-left px-6 sm:px-6 lg:px-16 py-12">
             <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632]">
               Merchants <br />payments <br />collection
             </h1>
