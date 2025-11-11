@@ -101,11 +101,11 @@ const HeroSection = () => {
           <div className="order-2 lg:order-2 w-full bg-[#D4D5FF] flex justify-center items-center">
             {/* Mobile & Tablet (smaller screens) */}
             <div className="block lg:hidden w-full overflow-hidden">
-              <div className="w-full h-[180px] overflow-hidden relative">
+              <div className="w-full h-[200px] overflow-hidden relative">
                 <img
                   src={phoneandlaptop}
                   alt="Phone Mockup"
-                  className="absolute top-0 left-0 w-full h-auto object-cover pl-4 pt-16"
+                  className="absolute top-0 left-0 w-full h-auto object-cover pl-8 pt-16"
                   style={{ transform: "translateY(0%)" }}
                 />
               </div>
