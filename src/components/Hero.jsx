@@ -1,6 +1,7 @@
 import React from "react";
 import herobg from "../assets/hero.jpg";
 import hero from "../assets/herobg.png";
+import phoneandlaptop from "../assets/phoneandlaptop.png";
 import playstore from "../assets/playstore.png";
 import { FaApple, FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import banner from "../assets/banner.jpg";
@@ -100,16 +101,16 @@ const HeroSection = () => {
           <div className="order-2 lg:order-2 w-full bg-[#D4D5FF] flex justify-center items-center">
             {/* Mobile & Tablet (smaller screens) */}
             <div className="block lg:hidden w-full overflow-hidden">
-              <div className="flex justify-center items-center">
-                <div className="w-full h-[250px] overflow-hidden">
-                  <img
-                    src={hero}
-                    alt="Phone Mockup"
-                    className="h-[180%] w-auto object-cover object-center mx-auto"
-                  />
-                </div>
+              <div className="w-full h-[180px] overflow-hidden relative">
+                <img
+                  src={phoneandlaptop}
+                  alt="Phone Mockup"
+                  className="absolute top-0 left-0 w-full h-auto object-cover pl-4 pt-16"
+                  style={{ transform: "translateY(0%)" }}
+                />
               </div>
             </div>
+
 
             {/* Desktop (larger screens) */}
             <div className="hidden lg:block w-full h-full overflow-hidden">
