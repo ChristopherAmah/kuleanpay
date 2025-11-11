@@ -64,9 +64,9 @@ const Footer = () => {
 
       <div className="relative mx-auto">
         {/* Top Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[5fr_4fr_2fr_2fr_3fr] gap-6 sm:gap-8 md:gap-13">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[5fr_4fr_2fr_2fr_3fr] gap-6 sm:gap-8 md:gap-13">
           {/* Logo + Social */}
-          <div className="space-y-4 sm:space-y-6">
+          <div className="col-span-2 sm:col-span-1 space-y-4 sm:space-y-6">
             <div className="flex items-center gap-2">
               <Link to="/">
                 <img src={footerlogo} alt="KuleanPay" className="h-10" />
