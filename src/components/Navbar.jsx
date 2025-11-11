@@ -86,7 +86,7 @@ const Navbar = () => {
           className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-2 py-1 hover:scale-105 transition"
         >
           <FaApple className="w-5 h-5" />
-          <div className="leading-tight">
+          <div className="">
             <p className="text-[10px]">Download on the</p>
             <p className="text-sm font-medium">App Store</p>
           </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
           className="flex items-center gap-2 bg-[#1C2536] text-white rounded-[6px] border border-[#A6A6A6] px-2 py-1 hover:scale-105 transition"
         >
           <img src={playstore} alt="Playstore" className="w-5 h-5" />
-          <div className="leading-tight">
+          <div className="">
             <p className="text-[10px]">GET IT ON</p>
             <p className="text-sm font-medium">Google Play</p>
           </div>
@@ -162,28 +162,30 @@ const Navbar = () => {
           </div>
 
           {/* Store Buttons (Mobile) */}
-          <div className="mt-10 flex flex-col gap-3">
+          <div className="mt-10 flex flex-wrap gap-3 justify-center">
             <Link
               to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
-              className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
+              className="flex-1 min-w-[150px] sm:min-w-[200px] flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition transform"
             >
-              <FaApple className="w-5 h-5" />
-              <div className="leading-tight">
-                <p className="text-[10px]">Download on the</p>
+              <FaApple className="w-5 h-5 flex-shrink-0" />
+              <div className="">
+                <p className="text-[10px] sm:text-xs">Download on the</p>
                 <p className="text-sm font-semibold">App Store</p>
               </div>
             </Link>
+
             <Link
               to={'https://play.google.com/store/apps/details?id=com.cwg.kuleanpay'}
-              className="flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition"
+              className="flex-1 min-w-[150px] sm:min-w-[200px] flex items-center gap-2 bg-[#1A1A2E] text-white rounded-md px-3 py-2 hover:scale-105 transition transform"
             >
-              <img src={playstore} alt="Playstore" className="w-5 h-5" />
-              <div className="leading-tight">
-                <p className="text-[10px]">GET IT ON</p>
+              <img src={playstore} alt="Playstore" className="w-5 h-5 flex-shrink-0" />
+              <div className="">
+                <p className="text-[10px] sm:text-xs">GET IT ON</p>
                 <p className="text-sm font-semibold">Google Play</p>
               </div>
             </Link>
           </div>
+
         </div>
       )}
     </nav>

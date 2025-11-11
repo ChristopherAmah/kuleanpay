@@ -9,7 +9,6 @@ const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // 🧭 Handles all footer link clicks (scroll / navigate / external)
   const handleLinkClick = (e, href) => {
     e.preventDefault();
 
@@ -29,7 +28,6 @@ const Footer = () => {
     }
   };
 
-  // --- Footer Link Data ---
   const socialLinks = [
     { href: "https://web.facebook.com/FifthlabAfrica", icon: <FaFacebookF /> },
     { href: "https://www.instagram.com/fifthlabafrica/", icon: <FaInstagram /> },
@@ -60,24 +58,24 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-[#1B2333] px-6 md:px-16 text-white overflow-hidden">
+    <footer className="relative bg-[#1B2333] px-4 sm:px-6 md:px-16 py-6 sm:py-8 md:py-[58.8px] overflow-hidden">
       {/* Decorative Blur Shape */}
       <div className="absolute -top-80 left-1/2 transform -translate-x-1/8 w-[400px] h-[400px] bg-[#6E83D1]/50 blur-3xl rounded-full pointer-events-none"></div>
 
-      <div className="relative mx-auto md:py-[58.8px] py-6">
+      <div className="relative mx-auto">
         {/* Top Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[5fr_4fr_2fr_2fr_3fr] gap-13">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[5fr_4fr_2fr_2fr_3fr] gap-6 sm:gap-8 md:gap-13">
           {/* Logo + Social */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <div className="flex items-center gap-2">
               <Link to="/">
                 <img src={footerlogo} alt="KuleanPay" className="h-10" />
               </Link>
-              <span className="text-[28.53px] font-semibold font-jakarta">
+              <span className="text-white text-[22px] sm:text-[28px] font-semibold font-jakarta">
                 KuleanPay
               </span>
             </div>
-            <p className="text-white text-[16px] font-satoshi">
+            <p className="text-white text-[14px] sm:text-[16px] font-satoshi">
               Powered by{" "}
               <span className="underline">
                 <a
@@ -89,14 +87,14 @@ const Footer = () => {
                 </a>
               </span>
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-3 sm:space-x-4">
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white border-[0.91px] gap-[21px] md:mt-[80px] border-gray-100 p-[10.97px] rounded-full hover:text-white transition-colors duration-300"
+                  className="text-white border-[0.91px] border-gray-100 p-2.5 rounded-full hover:text-white transition-colors duration-300"
                 >
                   {link.icon}
                 </a>
@@ -106,21 +104,21 @@ const Footer = () => {
 
           {/* Footer Columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title}>
-              <h3 className="text-[16px] font-medium font-satoshi mb-4">
+            <div key={title} className="mt-4 sm:mt-0">
+              <h3 className="text-white text-[14px] sm:text-[16px] font-medium font-satoshi mb-3 sm:mb-4">
                 {title}
               </h3>
-              <ul className="space-y-8 mt-[24px]">
+              <ul className="space-y-4 sm:space-y-8 mt-2 sm:mt-[24px]">
                 {links.map((link, index) => (
                   <li key={index}>
                     <a
                       href={link.href}
                       onClick={(e) => handleLinkClick(e, link.href)}
-                      className="flex items-center gap-2 text-[#C9D4E4] font-satoshi text-[16px] font-medium hover:text-white hover:underline transition-colors duration-300 cursor-pointer"
+                      className="flex items-center gap-1 sm:gap-2 text-[#C9D4E4] font-satoshi text-[14px] sm:text-[16px] font-medium hover:text-white hover:underline transition-colors duration-300 cursor-pointer"
                     >
                       {link.text}
                       {link.badge && (
-                        <span className="text-[10px] bg-gray-600 text-white px-2 py-[2px] rounded-full uppercase">
+                        <span className="text-[8px] sm:text-[10px] bg-gray-600 text-white px-1 py-[1px] rounded-full uppercase">
                           {link.badge}
                         </span>
                       )}
@@ -133,19 +131,18 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <hr className="my-10 border-gray-700" />
+        <hr className="my-6 sm:my-10 border-gray-700" />
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0 text-sm text-white">
-          <p className="font-satoshi text-[16px] font-medium">
-            &copy; {new Date().getFullYear()} Kuleanpay. Copyright and All
-            rights reserved.
+        <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left space-y-2 sm:space-y-0 text-sm text-white">
+          <p className="font-satoshi text-[14px] sm:text-[16px] font-medium">
+            &copy; {new Date().getFullYear()} Kuleanpay. All rights reserved.
           </p>
-          <div className="flex items-center font-satoshi text-[16px] font-medium">
+          <div className="flex items-center font-satoshi text-[14px] sm:text-[16px] font-medium mt-2 sm:mt-0">
             <img
               src={providus}
               alt="Providus Bank"
-              className="w-[23px] h-[19.59px] mr-2"
+              className="w-[20px] h-[17px] sm:w-[23px] sm:h-[19.59px] mr-2"
             />
             <span>Payments Processed by Providus Bank</span>
           </div>

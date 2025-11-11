@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircle } from "lucide-react"; // optional icon set
 import featurecard from "../assets/featurecard.png";
+import bestfeatures from "../assets/bestfeatures.svg";
 
 const FeaturesSection = () => {
   return (
@@ -10,7 +11,7 @@ const FeaturesSection = () => {
         <div className="relative flex justify-center">
           {/* Phone Container */}
           <div className="relative rounded-3xl p-2">
-            <img src={featurecard} alt="" />
+            <img src={bestfeatures} alt="" />
           </div>
         </div>
 

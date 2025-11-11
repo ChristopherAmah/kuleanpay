@@ -14,10 +14,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="md:px-16 lg:px-16 py-12">
+    <section className="md:px-16 lg:px-16 pt-6 sm:pb-12">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-satoshi font-medium text-[#000000]">
+        <h1 className="text-3xl md:text-4xl font-satoshi font-medium text-[#000000]">
           Join the Kuleanpay Community
         </h1>
       </div>
@@ -25,12 +25,12 @@ const ContactSection = () => {
       {/* Main Grid */}
       <div
         style={backgroundStyle}
-        className="rounded-[21px] overflow-hidden"
+        className="md:rounded-[21px] overflow-hidden"
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
           {/* LEFT: Form Card */}
           <div className="flex justify-center items-center py-3 px-3">
-            <div className="bg-white rounded-[14px] p-8 sm:p-10 w-full">
+            <div className="bg-white md:rounded-[14px] p-8 sm:p-10 w-full">
               <form>
                 {/* Name */}
                 <div className="mb-6">

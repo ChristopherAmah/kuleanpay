@@ -92,7 +92,7 @@ const App = () => {
           
           {/* Left Section */}
           <div className="flex flex-col justify-center text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#454545] leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#454545] ">
               Frequently Asked <br className="hidden sm:inline" />
               <span className="text-[#3b49df]">Questions</span>
             </h1>

@@ -11,7 +11,7 @@ const FeatureItem = ({ icon: Icon, title, description }) => (
     </div>
     {/* Text */}
     <div>
-      <h3 className="text-[24px] text-[#000000DE] mb-1">{title}</h3>
+      <h3 className="text-2xl md:text-[24px] text-[#000000DE] mb-1">{title}</h3>
       <p className="text-[#192031CC] text-[20px]">{description}</p>
     </div>
   </div>
@@ -44,7 +44,7 @@ const BuySellWithKuleanpay = () => {
         
         {/* --- Left Column: Features --- */}
         <div className="space-y-10">
-          <h2 className="text-3xl md:text-[32px] font-medium text-[#000000]">
+          <h2 className="text-2xl md:text-[32px] font-medium text-[#000000]">
             Buy & Sell With Kuleanpay
           </h2>
 

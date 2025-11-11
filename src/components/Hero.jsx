@@ -18,16 +18,16 @@ const Rating = ({ rating = 4.5 }) => {
       <div className="flex text-yellow-400">
         {/* Full Stars */}
         {[...Array(fullStars)].map((_, i) => (
-          <FaStar key={i} className="w-6 h-6" />
+          <FaStar key={i} className="w-4 h-4 md:w-6 md:h-6" />
         ))}
 
         {/* Half Star */}
-        {hasHalfStar && <FaStarHalfAlt className="w-6 h-6" />}
+        {hasHalfStar && <FaStarHalfAlt className="w-4 h-4 md:w-6 md:h-6" />}
 
         {/* Empty Stars */}
         {[...Array(totalStars - fullStars - (hasHalfStar ? 1 : 0))].map(
           (_, i) => (
-            <FaRegStar key={`empty-${i}`} className="w-6 h-6 text-gray-300" />
+            <FaRegStar key={`empty-${i}`} className="w-4 h-4 md:w-6 md:h-6 text-gray-300" />
           )
         )}
       </div>
@@ -61,15 +61,15 @@ const HeroSection = () => {
             </p>
 
             {/* Store Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row lg:items-start gap-4">
+            <div className="mt-10 flex flex-row sm:flex-row lg:items-start gap-4">
               <Link
                 to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
-                className="flex items-center gap-3 bg-[#01011C] border border-[#A6A6A6] text-white rounded-lg px-3 py-2 md:px-3 md:py-2 w-40 md:w-auto transition-transform duration-300 hover:scale-105"
+                className="flex items-center gap-3 bg-[#01011C] border border-[#A6A6A6] text-white rounded-lg px-2 py-2 md:px-3 md:py-2 md:w-auto transition-transform duration-300 hover:scale-105"
               >
                 <FaApple className="w-5 h-5 md:w-7 md:h-7" />
                 <div>
-                  <p className="text-xs font-medium">Download on the</p>
-                  <p className="text-sm md:text-xl md:font-semibold">
+                  <p className="text-[12px] md:text-xs md:font-medium">Download on the</p>
+                  <p className="text-xs md:text-xl md:font-semibold">
                     App Store
                   </p>
                 </div>
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
               <Link
                 to={'https://play.google.com/store/apps/details?id=com.cwg.kuleanpay'}
-                className="flex items-center gap-3 bg-[#01011C] border border-[#A6A6A6] text-white rounded-lg px-3 py-2 md:px-3 md:py-2 w-40 md:w-auto transition-transform duration-300 hover:scale-105"
+                className="flex items-center gap-3 bg-[#01011C] border border-[#A6A6A6] text-white rounded-lg px-5 py-2 md:px-3 md:py-2 md:w-auto transition-transform duration-300 hover:scale-105"
               >
                 <img
                   src={playstore}
@@ -85,8 +85,8 @@ const HeroSection = () => {
                   className="w-4 h-4 md:w-7 md:h-7"
                 />
                 <div>
-                  <p className="text-xs font-medium">GET IT ON</p>
-                  <p className="text-sm md:text-lg md:font-semibold">
+                  <p className="text-[12px] md:text-xs md:font-medium">GET IT ON</p>
+                  <p className="text-xs md:text-lg md:font-semibold">
                     Google Play
                   </p>
                 </div>
@@ -101,7 +101,7 @@ const HeroSection = () => {
           <div className="order-2 lg:order-2 w-full bg-[#D4D5FF] flex justify-center items-center">
             {/* Mobile & Tablet (smaller screens) */}
             <div className="block lg:hidden w-full overflow-hidden">
-              <div className="w-full h-[200px] overflow-hidden relative">
+              <div className="w-full h-[250px] overflow-hidden relative">
                 <img
                   src={phoneandlaptop}
                   alt="Phone Mockup"

@@ -1,7 +1,6 @@
 import React from 'react';
 import herobg from '../assets/hero.jpg'; // The main background image
-import escrowbanner from '../assets/escrowbanner.png'; // The banner at the bottom
-
+import escrowbanner from '../assets/escrowbanner.png'; // The right-side image
 
 const HeroSection = () => {
   return (
@@ -10,26 +9,30 @@ const HeroSection = () => {
       style={{
         backgroundImage: `url(${herobg})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundPosition: 'center',
       }}
     >
-      <div className=" relative z-10 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0 md:min-h-screen">
+      <div className="relative z-10 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:py-0">
           
           {/* Left Column: Text */}
-          <div className="flex flex-col text-left lg:items-start lg:text-left px-6 sm:px-6 lg:pl-16">
-            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632]" style={{fontStyle: "satoshi"}}>
+          <div className="flex flex-col text-left lg:items-start px-6 sm:px-6 lg:pl-16 py-6">
+            <h1 className="text-4xl lg:text-[77px] font-bold text-[#1B2632] ">
               Go Escrow<br />with <br />Kuleanpay
             </h1>
-            <p className="mt-4 font-satoshi md:max-w-xl lg:max-w-md  lg:text-[18px]  text-[#19203199]">
+            <p className="mt-4 font-satoshi md:max-w-xl lg:max-w-md lg:text-[18px] text-[#19203199] text-base sm:text-lg">
               Both buyers and sellers are protected and funds held securely by us. Payments are released only after orders are fulfilled.
             </p>
-          </div> {/* ✅ closed left column properly */}
+          </div>
 
-          {/* Right Column: Gradient Overlay */}
-          <div className="hidden lg:block w-full h-full relative">
-            <div className="absolute inset-0 bg-[#D4D5FF] z-10">
-                <img src={escrowbanner} alt="" className='bg-cover mx-auto justify-center'/>
+          {/* Right Column: Image */}
+          <div className="w-full bg-[#D4D5FF] flex justify-center lg:justify-end items-center py-6 lg:py-0">
+            <div className="w-3/4 sm:w-1/2 lg:w-full max-w-md lg:max-w-full">
+              <img
+                src={escrowbanner}
+                alt="Escrow with Kuleanpay"
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
           
@@ -39,11 +42,4 @@ const HeroSection = () => {
   );
 };
 
-// --- App Component ---
-export default function App() {
-  return (
-    <div>
-      <HeroSection />
-    </div>
-  );
-}
+export default HeroSection;

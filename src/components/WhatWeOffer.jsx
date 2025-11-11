@@ -69,7 +69,7 @@ const WhyKuleanpay = () => {
 
         {/* Text Content */}
         <div className="lg:pl-8">
-          <h2 className="text-[32px] font-medium text-[#000000] mb-4">
+          <h2 className="text-2xl md:text-[32px] font-medium text-[#000000] mb-4">
             Bank With Kuleanpay
           </h2>
           <p className="text-[#192031CC] text-[20px] max-w-lg">

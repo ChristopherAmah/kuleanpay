@@ -16,14 +16,14 @@ const Hero = () => {
       }}
     >
       {/* Heading */}
-      <h1 className="text-3xl md:text-5xl px-2 font-bold text-[#1B2632]">
+      <h1 className="text-3xl md:text-5xl px-4 md:px-2 font-bold text-[#1B2632]">
         Let’s connect and manage your{" "}
         <br className="hidden md:block" /> finances with{" "}
         <span className="text-[#5E7CEE] font-bold">Kuleanpay.</span>
       </h1>
 
       {/* Store Buttons */}
-      <div className="flex justify-center items-center gap-4 mt-6">
+      <div className="flex justify-center items-center gap-4 mt-8 md:mt-6">
         <Link
           to={'https://apps.apple.com/ng/app/kuleanpay/id1659853273'}
           className="flex items-center bg-[#01011C] text-white rounded-lg px-4 py-2 gap-2 border border-[#A6A6A6] hover:bg-gray-800 transition"
@@ -53,7 +53,7 @@ const Hero = () => {
           <img
             src={phoneandlaptop}
             alt="Phone and Laptop Mockup"
-            className="w-full object-cover object-top"
+            className="w-full object-cover object-top pl-8"
           />
         </div>
       </div>
