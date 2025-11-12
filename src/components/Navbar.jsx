@@ -30,7 +30,7 @@ const Navbar = () => {
       {/* Desktop Nav */}
       <div className="hidden md:flex items-center gap-x-8 text-[#878C91] text-[16px] font-medium">
         <Link to="/why-kuleanpay" className="hover:text-[#060761] transition">
-          Why Kuleanpay?
+          Why Kuleanpay
         </Link>
 
         {/* Solutions Dropdown */}
@@ -134,7 +134,7 @@ const Navbar = () => {
           {/* Links */}
           <div className="flex flex-col mt-10 space-y-6 text-gray-700 text-lg font-medium">
             <Link to="/why-kuleanpay" onClick={() => setIsMenuOpen(false)} className="hover:text-black">
-              Why Kuleanpay?
+              Why Kuleanpay
             </Link>
             <details className="cursor-pointer">
               <summary className="hover:text-black">Solutions</summary>
