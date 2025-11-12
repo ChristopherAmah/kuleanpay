@@ -118,7 +118,7 @@ const Footer = () => {
                     >
                       {link.text}
                       {link.badge && (
-                        <span className="text-[8px] sm:text-[10px] bg-gray-600 text-white px-1 py-[1px] rounded-full uppercase">
+                        <span className="text-[8px] sm:text-[10px] bg-gray-600 text-white px-1 py-[1px] md:px-3 md:py-[3px] rounded-full uppercase">
                           {link.badge}
                         </span>
                       )}
