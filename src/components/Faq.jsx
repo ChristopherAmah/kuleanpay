@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // You can install this icon library with: npm install lucide-react
 import { Headset, MessageSquare, Plus, Minus } from 'lucide-react';
@@ -100,18 +101,28 @@ const App = () => {
               have some questions before you get started? check out our FAQs or lets talk :)
             </p>
             <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              <div className="border-2 border-[#03045E] rounded-2xl p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer hover:bg-blue-50 transition-colors">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center">
-                  <Headset className="text-[#03045E]" size={24} sm:size={32} />
+              <a href="tel:+2349162924534" className="block">
+                <div className="border-2 border-[#03045E] rounded-2xl p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer hover:bg-blue-50 transition-colors">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center">
+                    <Headset className="text-[#03045E]" size={24} sm:size={32} />
+                  </div>
+                  <p className="mt-2 sm:mt-4 font-medium text-[14px] sm:text-[16px] text-[#19203199]">
+                    Call with Customer Service
+                  </p>
                 </div>
-                <p className="mt-2 sm:mt-4 font-medium text-[14px] sm:text-[16px] text-[#19203199]">Call with Customer Service</p>
-              </div>
-              <div className="bg-[#D6DAE43D] rounded-[16px] p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer hover:bg-gray-50 transition-colors">
-                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center">
-                  <MessageSquare className="text-[#292D32]" size={24} sm:size={32} />
+              </a>
+
+              <a href="mailto:kuleanpay.support@thefifthlab.com">
+                <div className="bg-[#D6DAE43D] rounded-[16px] p-4 sm:p-6 flex flex-col items-center text-center cursor-pointer hover:bg-gray-50 transition-colors">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center">
+                    <MessageSquare className="text-[#292D32]" size={24} sm:size={32} />
+                  </div>
+                  <p className="mt-2 sm:mt-4 font-medium text-[14px] sm:text-[16px] text-[#19203199]">
+                    Send us an email
+                  </p>
                 </div>
-                <p className="mt-2 sm:mt-4 font-medium text-[14px] sm:text-[16px] text-[#19203199]">Chat with Kuleanpay's Bot system</p>
-              </div>
+              </a>
+
             </div>
           </div>
 

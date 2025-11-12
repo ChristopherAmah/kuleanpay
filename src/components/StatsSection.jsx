@@ -20,8 +20,8 @@ const StatsSection = () => {
       <div className="relative z-10 container mx-auto flex flex-col lg:flex-row items-center justify-between lg:gap-20">
         {/* Left Section: Headline */}
         <div className="text-center lg:text-left flex-shrink-0">
-          <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold ">
-            Saves time by having <br className="hidden sm:inline" /> in one platform
+          <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold ">
+            Kuelanpay is a complete <br className="hidden sm:inline" /> financial solution for everyone
           </h2>
         </div>
 
@@ -29,19 +29,19 @@ const StatsSection = () => {
         <div className="flex flex-wrap justify-center lg:grid lg:grid-cols-3 gap-4 sm:gap-8 lg:gap-20 text-center lg:text-left mt-6">
           {/* Stat 1 */}
           <div className="flex-1 min-w-[80px]">
-            <p className="text-2xl sm:text-3xl lg:text-6xl font-bold">5.1m+</p>
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold">40K+</p>
             <p className="text-xs sm:text-sm mt-1 text-[#FFFFFF80]">Downloads</p>
           </div>
 
           {/* Stat 2 */}
           <div className="flex-1 min-w-[80px]">
-            <p className="text-2xl sm:text-3xl lg:text-6xl font-bold">4.2m+</p>
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold">10K+</p>
             <p className="text-xs sm:text-sm mt-1 text-[#FFFFFF80]">Active Users</p>
           </div>
 
           {/* Stat 3 */}
           <div className="flex-1 min-w-[80px]">
-            <p className="text-2xl sm:text-3xl lg:text-6xl font-bold">97%</p>
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold">95%</p>
             <p className="text-xs sm:text-sm mt-1 text-[#FFFFFF80]">Customer Satisfaction</p>
           </div>
         </div>

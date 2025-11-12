@@ -168,7 +168,7 @@ const PrivacyPolicy = () => {
           <p className="mt-3">
             Contact us at{" "}
             <a
-              href="mailto:support@kuleanpay.com"
+              href="mailto:kuleanpay.support@thefifthlab.com"
               className="text-blue-600 underline"
             >
               support@kuleanpay.com
