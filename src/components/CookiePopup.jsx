@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const CookiePopup = () => {
   const [visible, setVisible] = useState(false);
@@ -50,12 +51,12 @@ const CookiePopup = () => {
 
       <p className="m-0 text-sm leading-relaxed flex-1 text-start md:text-center sm:text-left">
         We use cookies to enhance your experience. By continuing, you agree to our{" "}
-        <a
-          href="/privacy-policy"
+        <Link
+          to="/privacy-policy"
           className="text-blue-500 font-medium hover:underline"
         >
           Privacy Policy
-        </a>.
+        </Link>.
       </p>
 
       <div className="flex flex-col sm:flex-row items-center gap-2 mt-3">
