@@ -9,6 +9,7 @@ import CtaSection from './components/CtaSection'
 import GetInTouch from './components/GetInTouch'
 import ConnectSection from './components/ConnectSection'
 import Footer from './components/Footer'
+import CookiePopup from './components/CookiePopup';
 import Escrow from './pages/Escrow'
 import DigitalBanking from './pages/DigitalBanking'
 import Partners from './pages/Partners'
@@ -42,6 +43,8 @@ function App() {
       <GetInTouch />
       <ConnectSection />
       <Footer />
+
+      <CookiePopup />
     </div>
   )
 }
