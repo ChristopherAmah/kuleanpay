@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-// ⚠️ Replace with your actual image paths
-import img1 from "../assets/kuleanpay1.svg";
-import img2 from "../assets/kuleanpay2.svg";
+
+import img1 from "../assets/kuleanpay1.jpg";
+import img2 from "../assets/kuleanpay2.jpg";
 
 const sections = [
   {

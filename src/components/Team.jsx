@@ -1,8 +1,8 @@
 import React from "react";
 
-import member1 from "../assets/merchantlink1.svg";
-import member2 from "../assets/merchantlink1.svg";
-import member3 from "../assets/merchantlink1.svg";
+import avatar1 from "../assets/avatar1.png";
+import avatar2 from "../assets/avatar2.png";
+import avatar3 from "../assets/avatar3.png";
 
 const TeamSection = () => {
   return (
@@ -13,17 +13,17 @@ const TeamSection = () => {
         <div className="flex justify-center -space-x-3 sm:-space-x-4 mb-6">
           <img
             className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full border-2 border-white object-cover shadow-md"
-            src={member1}
+            src={avatar1}
             alt="Team Member 1"
           />
           <img
             className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full border-2 border-white object-cover shadow-md"
-            src={member2}
+            src={avatar2}
             alt="Team Member 2"
           />
           <img
             className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full border-2 border-white object-cover shadow-md"
-            src={member3}
+            src={avatar3}
             alt="Team Member 3"
           />
         </div>
