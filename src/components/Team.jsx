@@ -8,7 +8,7 @@ import avatar3 from "../assets/bamidele.png";
 const TeamSection = () => {
   return (
     <div className="flex justify-center items-center px-4 sm:px-6 md:px-12 py-12 bg-white">
-      <div className="w-full max-w-5xl text-center bg-blue-50 px-6 sm:px-10 md:px-20 py-10 rounded-lg shadow-sm border border-blue-100">
+      <div className="w-full max-w-5xl text-center bg-blue-50 px-6 sm:px-10 md:px-20 py-10 rounded-lg md:rounded-[20px] shadow-sm border border-blue-100">
         
         {/* --- Team Member Images --- */}
         <div className="flex justify-center -space-x-3 sm:-space-x-4 mb-6">
