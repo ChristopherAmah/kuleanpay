@@ -9,8 +9,13 @@ const CookiePopup = () => {
   }, []);
 
   const handleAccept = () => {
-    // Set cookie for 5 minutes (for testing)
-    document.cookie = "cookieAccepted=true; path=/; max-age=" + 7 * 24 * 60 * 60; //1 year - 60 * 60 * 24 * 365;
+    // Set cookie for 1 week
+    document.cookie = "cookieAccepted=true; path=/; max-age=" + 7 * 24 * 60 * 60; // 1 week
+    setVisible(false);
+  };
+
+  const handleClose = () => {
+    // Just close the popup without setting a cookie
     setVisible(false);
   };
 
@@ -27,7 +32,7 @@ const CookiePopup = () => {
         font-inter z-[1000]
       "
     >
-      <p className="m-0 text-sm leading-relaxed flex-1 text-center sm:text-left">
+      <p className="m-0 text-sm leading-relaxed flex-1 text-start md:text-center sm:text-left">
         We use cookies to enhance your experience. By continuing, you agree to our{" "}
         <a
           href="/privacy-policy"
@@ -37,18 +42,32 @@ const CookiePopup = () => {
         </a>.
       </p>
 
-      <button
-        onClick={handleAccept}
-        className="
-          bg-blue-500 hover:bg-blue-600 
-          text-white font-medium text-sm 
-          px-4 py-2 rounded-lg 
-          transition-colors duration-300 
-          mx-auto sm:mx-0
-        "
-      >
-        Accept
-      </button>
+      <div className="flex items-center gap-2">
+        <button
+          onClick={handleAccept}
+          className="
+            bg-blue-500 hover:bg-blue-600 
+            text-white font-medium text-sm 
+            px-4 py-2 rounded-lg 
+            transition-colors duration-300
+          "
+        >
+          Accept
+        </button>
+
+        <button
+          onClick={handleClose}
+          className="
+            text-gray-500 hover:text-gray-700 
+            font-bold text-lg 
+            px-2 py-1 
+            transition-colors duration-300
+          "
+          aria-label="Close"
+        >
+          ×
+        </button>
+      </div>
     </div>
   );
 };
