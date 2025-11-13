@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import avatar1 from "../assets/avatar1.png";
 import avatar2 from "../assets/avatar2.png";
@@ -7,7 +8,7 @@ import avatar3 from "../assets/avatar3.png";
 const TeamSection = () => {
   return (
     <div className="flex justify-center items-center px-4 sm:px-6 md:px-12 py-12 bg-white">
-      <div className="w-full max-w-3xl text-center bg-blue-50 px-6 sm:px-10 md:px-20 py-10 rounded-lg shadow-sm border border-blue-100">
+      <div className="w-full max-w-5xl text-center bg-blue-50 px-6 sm:px-10 md:px-20 py-10 rounded-lg shadow-sm border border-blue-100">
         
         {/* --- Team Member Images --- */}
         <div className="flex justify-center -space-x-3 sm:-space-x-4 mb-6">
@@ -39,12 +40,14 @@ const TeamSection = () => {
         </p>
 
         {/* --- Button --- */}
-        <button
+        <Link to='https://thefifthlab.com/about'>
+            <button
           className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-[#03045E] text-white text-base sm:text-lg md:text-[20px] font-medium rounded-lg hover:bg-[#020347] transition duration-300"
           onClick={() => console.log("Viewing team...")}
         >
           View Team
         </button>
+        </Link>
       </div>
     </div>
   );
