@@ -58,7 +58,7 @@ const CookiePopup = () => {
         </a>.
       </p>
 
-      <div className="flex items-center gap-2 mt-3">
+      <div className="flex flex-col sm:flex-row items-center gap-2 mt-3">
         <button
           onClick={handleAccept}
           className="
