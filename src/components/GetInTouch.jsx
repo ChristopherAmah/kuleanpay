@@ -66,11 +66,13 @@ const ContactSection = () => {
 
                 {/* Join Button */}
                 <button
-                  type="submit"
+                  type="button"
+                  onClick={() => window.location.href = "mailto:kuleanpay.support@thefifthlab.com"}
                   className="w-full bg-[#03045E] text-white text-md font-medium py-3 rounded-full hover:bg-black transition-colors"
                 >
                   Join
                 </button>
+
               </form>
 
               {/* Telegram link */}
